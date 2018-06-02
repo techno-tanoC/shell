@@ -21,6 +21,7 @@ setup_app () {
   sudo pacman -S --refresh --noconfirm virtualbox linux414-virtualbox-host-modules
   sudo pacman -S --noconfirm transmission-gtk spacefm gnome-control-center eog
   sudo pacman -S --noconfirm vlc qt4
+  yaourt -S --noconfirm gnome-session-properties
   yaourt -S --noconfirm google-chrome
   yaourt -S --noconfirm patch slack-desktop
 }
