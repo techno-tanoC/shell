@@ -1,6 +1,6 @@
 #!/bin/sh
 
-base () {
+setup_base () {
   echo "install base packages"
 
   echo '''
@@ -15,7 +15,7 @@ base () {
   sudo pacman -S --noconfirm yaourt tree vim base-devel
 }
 
-app () {
+setup_app () {
   echo "install applications"
 
   sudo pacman -S --refresh --noconfirm virtualbox linux414-virtualbox-host-modules
@@ -25,7 +25,7 @@ app () {
   yaourt -S --noconfirm patch slack-desktop
 }
 
-fcitx () {
+setup_fcitx () {
   echo "install fcitx"
 
   sudo pacman -S --noconfirm fcitx-im fcitx-configtool fcitx-mozc
@@ -37,7 +37,7 @@ fcitx () {
   ''' >> ~/.xprofile
 }
 
-docker () {
+setup_docker () {
   echo "install docker"
 
   sudo pacman -S --noconfirm docker docker-compose
@@ -47,7 +47,7 @@ docker () {
   sudo systemctl start docker.service
 }
 
-git () {
+setup_git () {
   echo "install and config git"
 
   name="techno-tanoC"
@@ -69,7 +69,7 @@ git () {
 
 # Langages
 
-asdf () {
+setup_asdf () {
   echo "install asdf and plugins"
 
   sudo pacman -S --refresh --noconfirm gcc make ncurses openssh autoconf
@@ -84,7 +84,7 @@ asdf () {
   asdf plugin-add elixir https://github.com/asdf-vm/asdf-elixir.git
 }
 
-ruby () {
+setup_ruby () {
   echo "install rbenv"
 
   sudo pacman -S --noconfirm gcc make openssl readline sqlite
@@ -94,21 +94,21 @@ ruby () {
   git clone https://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-build
 }
 
-rust () {
+setup_rust () {
   echo "install rustup"
   curl https://sh.rustup.rs -sSf | sh -s -- -y
 }
 
-base
-app
-fcitx
-docker
-git
+setup_base
+setup_app
+setup_fcitx
+setup_docker
+setup_git
 
 # Langages
-asdf
-ruby
-rust
+setup_asdf
+setup_ruby
+setup_rust
 
 LANG=C xdg-user-dirs-gtk-update
 
