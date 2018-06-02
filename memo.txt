@@ -1,0 +1,11 @@
+## キーボード周り
+
+- fcitxインストール後にキーボードレイアウトがおかしい時はfcitx-settinのキーボードが日本語になっているか確認
+- loadkeys jp106
+
+## 設定周り
+
+- "設定"がない時は`pacman -S gnome-control-center`
+
+## mozcの辞書ツール
+`/usr/lib/mozc/mozc_tool --mode=dictionary_tool`
