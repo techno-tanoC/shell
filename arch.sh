@@ -29,7 +29,7 @@ setup_app () {
 setup_fcitx () {
   echo "install fcitx"
 
-  sudo pacman -S --noconfirm fcitx-im fcitx-configtool fcitx-mozc
+  sudo pacman -S --refresh --noconfirm fcitx-im fcitx-configtool fcitx-mozc
 
   echo '''
   export GTK_IM_MODULE=fcitx
@@ -41,7 +41,7 @@ setup_fcitx () {
 setup_docker () {
   echo "install docker"
 
-  sudo pacman -S --noconfirm docker docker-compose
+  sudo pacman -S --refresh --noconfirm docker docker-compose
   sudo usermod -aG docker $USER
 
   sudo systemctl enable docker.service
@@ -54,7 +54,7 @@ setup_git () {
   name="techno-tanoC"
   email="develop.tanoc@gmail.com"
 
-  sudo pacman -S --noconfirm git tig
+  sudo pacman -S --refresh --noconfirm git tig
 
   git config --global user.name "$name"
   git config --global user.email "$email"
@@ -88,7 +88,7 @@ setup_asdf () {
 setup_ruby () {
   echo "install rbenv"
 
-  sudo pacman -S --noconfirm gcc make openssl readline sqlite
+  sudo pacman -S --refresh --noconfirm gcc make openssl readline sqlite
 
   git clone https://github.com/sstephenson/rbenv.git ~/.rbenv
   mkdir ~/.rbenv/plugins
