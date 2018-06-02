@@ -25,6 +25,18 @@ app () {
   yaourt -S --noconfirm patch slack-desktop
 }
 
+fcitx () {
+  echo "install fcitx"
+
+  sudo pacman -S --noconfirm fcitx-im fcitx-configtool fcitx-mozc
+
+  echo '''
+  export GTK_IM_MODULE=fcitx
+  export QT_IM_MODULE=fcitx
+  export XMODIFIERS=@im=fcitx
+  ''' >> ~/.xprofile
+}
+
 docker () {
   echo "install docker"
 
@@ -55,13 +67,21 @@ git () {
 
 }
 
+rust () {
+  echo "install rustup"
+  curl https://sh.rustup.rs -sSf | sh -s -- -y
+}
+
 base
 app
+fcitx
 docker
+git
+rust
 
 LANG=C xdg-user-dirs-gtk-update
 
-echo -e "\e[32mPlease log out. You may be necessary to reboot\e[m"
-echo
 echo "register ssh key:"
 echo -e "\e[32m$(cat "$HOME/.ssh/id_rsa.pub")\e[m"
+echo
+echo -e "\e[32mPlease log out. You may be necessary to reboot\e[m"
