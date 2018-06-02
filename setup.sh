@@ -40,3 +40,5 @@ app
 docker
 
 LANG=C xdg-user-dirs-gtk-update
+
+echo -e "\e[32mPlease log out. You may be necessary to reboot\e[m"
