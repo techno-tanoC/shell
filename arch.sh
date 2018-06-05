@@ -69,7 +69,14 @@ setup_git () {
 
 setup_hugo () {
   echo "install hugo"
-  sudo pacman -S hugo
+  sudo pacman -S --noconfirm hugo
+}
+
+setup_peco () {
+  echo "install peco"
+
+  # It depends on git.
+  yaourt -S --noconfirm peco
 }
 
 # Langages
