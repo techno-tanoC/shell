@@ -15,20 +15,4 @@ for f in $files; do
   done
 done
 
-# for entry in /mnt/open/CravingExplorer/2018春/*; do
-#   if [ -f "$entry" ]; then
-#     entry_name=$(basename "$entry")
-#     for dir in /mnt/open/CravingExplorer/2018春/*; do
-#       if [ -d "$dir" ]; then
-#         dir_name=$(basename "$dir")
-#         if [[ $entry_name = *"$dir_name"* ]]; then
-#           echo $dir_name
-#           echo $entry_name
-#           echo
-#         fi
-#       fi
-#     done
-#   fi
-# done
-
 IFS=$PRE_IFS
