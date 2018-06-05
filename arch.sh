@@ -77,6 +77,13 @@ setup_peco () {
 
   # It depends on git.
   yaourt -S --noconfirm peco
+
+  # ~/.peco/config.json
+  echo """
+{
+  "Layout": "bottom-up"
+}
+  """
 }
 
 # Langages
