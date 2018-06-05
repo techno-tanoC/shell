@@ -100,6 +100,11 @@ setup_rust () {
   curl https://sh.rustup.rs -sSf | sh -s -- -y
 }
 
+setup_hugo () {
+  echo "install hugo"
+  sudo pacman -S hugo
+}
+
 setup_base
 setup_app
 setup_fcitx
