@@ -65,7 +65,11 @@ setup_git () {
 
   mkdir ~/.ssh
   ssh-keygen -t rsa -C "$email" -N "" -f "$HOME/.ssh/id_rsa"
+}
 
+setup_hugo () {
+  echo "install hugo"
+  sudo pacman -S hugo
 }
 
 # Langages
@@ -98,11 +102,6 @@ setup_ruby () {
 setup_rust () {
   echo "install rustup"
   curl https://sh.rustup.rs -sSf | sh -s -- -y
-}
-
-setup_hugo () {
-  echo "install hugo"
-  sudo pacman -S hugo
 }
 
 setup_base
