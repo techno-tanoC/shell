@@ -1,5 +1,14 @@
 #!/bin/sh
 
+setup_base () {
+  echo "install base packages"
+
+  sudo apt update
+  sudo apt upgrade
+
+  sudo apt install -y vim tree
+}
+
 setup_git () {
   echo "install and config git"
 
