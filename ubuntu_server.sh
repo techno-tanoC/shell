@@ -9,6 +9,13 @@ setup_base () {
   sudo apt install -y vim tree
 }
 
+setup_zsh () {
+  echo "install zsh"
+
+  sudo apt install -y zsh
+  sudo chsh -s /usr/bin/zsh
+}
+
 setup_git () {
   echo "install and config git"
 
@@ -39,6 +46,7 @@ setup_docker () {
 }
 
 setup_base
+setup_zsh
 setup_git
 setup_docker
 
