@@ -27,3 +27,11 @@ setup_git () {
   mkdir ~/.ssh
   ssh-keygen -t rsa -C "$email" -N "" -f "$HOME/.ssh/id_rsa"
 }
+
+setup_base
+setup_git
+
+echo "register ssh:key"
+echo -e "\e[32m$(cat "$HOME/.ssh/id_rsa.pub")\e[m"
+echo
+echo -e "\e[32mPlease log out. You may be necessary to reboot\e[m"
