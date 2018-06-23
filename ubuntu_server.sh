@@ -15,7 +15,7 @@ setup_git () {
   name="techno-tanoC"
   email="develop.tanoc@gmail.com"
 
-  sudo pacman -S --refresh --noconfirm git tig
+  sudo apt install -y git tig
 
   git config --global user.name "$name"
   git config --global user.email "$email"
