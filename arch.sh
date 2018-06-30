@@ -116,6 +116,9 @@ setup_ruby () {
 setup_rust () {
   echo "install rustup"
   curl https://sh.rustup.rs -sSf | sh -s -- -y
+
+  # cargo-update requires cmake
+  # cargo install cargo-watch just cargo-update cargo-outdated cargo-tree
 }
 
 setup_base
