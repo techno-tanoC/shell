@@ -13,7 +13,7 @@ setup_zsh () {
   echo "install zsh"
 
   sudo apt install -y zsh
-  sudo chsh -s /usr/bin/zsh
+  chsh -s /usr/bin/zsh
 }
 
 setup_git () {
