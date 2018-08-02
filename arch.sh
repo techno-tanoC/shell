@@ -26,6 +26,12 @@ setup_app () {
   yaourt -S --noconfirm patch slack-desktop
 }
 
+setup_zsh() {
+  echo "install zsh"
+
+  sudo pacman -S --refresh --noconfirm zsh
+}
+
 setup_fcitx () {
   echo "install fcitx"
 
@@ -123,6 +129,7 @@ setup_rust () {
 
 setup_base
 setup_app
+setup_zsh
 setup_fcitx
 setup_docker
 setup_git
