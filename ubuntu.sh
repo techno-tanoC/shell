@@ -72,7 +72,10 @@ setup_asdf() {
   sudo apt install -y autoconf make gcc libssl-dev libncurses5-dev
 
   git clone https://github.com/asdf-vm/asdf.git ~/.asdf
+
+  set +u
   . "$HOME/.asdf/asdf.sh"
+  set -u
 
   asdf plugin-add nodejs https://github.com/asdf-vm/asdf-nodejs.git
   bash ~/.asdf/plugins/nodejs/bin/import-release-team-keyring
