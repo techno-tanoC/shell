@@ -50,7 +50,9 @@ setup_git () {
   git config --global push.default current
   git config --global alias.ignore '!gi() { curl -L -s https://www.gitignore.io/api/$@ ;}; gi'
 
+  set +e
   mkdir ~/.ssh
+  set -e
   ssh-keygen -t rsa -C "$email" -N "" -f "$HOME/.ssh/id_rsa"
 }
 
@@ -100,8 +102,8 @@ setup_app
 setup_fcitx
 setup_git
 setup_docker
-setup_asdf
 
+setup_asdf
 setup_ruby
 setup_rust
 
