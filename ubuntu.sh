@@ -70,12 +70,22 @@ setup_asdf() {
   asdf plugin-add elixir https://github.com/asdf-vm/asdf-elixir.git
 }
 
+setup_ruby () {
+  echo "install rbenv"
+
+  sudo apt install -y libreadline-dev libssl-dev zlib1g-dev libsqlite3-dev
+  git clone https://github.com/sstephenson/rbenv.git ~/.rbenv
+  mkdir ~/.rbenv/plugins
+  git clone https://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-build
+}
+
 setup_base
 setup_app
 setup_fcitx
 setup_git
 setup_docker
 setup_asdf
+setup_ruby
 
 LANG=C xdg-user-dirs-gtk-update
 
