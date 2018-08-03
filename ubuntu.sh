@@ -14,6 +14,10 @@ setup_app() {
   echo "install applications"
 
   sudo apt install -y slack transmission virtualbox vlc spacefm gnome-tweak-tool chrome-gnome-shell
+
+  wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+  sudo dpkg -i google-chrome-stable_current_amd64.deb
+  rm google-chrome-stable_current_amd64.deb
 }
 
 setup_fcitx () {
