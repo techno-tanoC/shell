@@ -8,7 +8,7 @@ setup_base() {
   sudo apt upgrade
 
   sudo apt install -y tree vim zsh curl
-  chsh -s $(which zsh)
+  # chsh -s $(which zsh)
 }
 
 setup_app() {
