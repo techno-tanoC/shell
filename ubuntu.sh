@@ -31,6 +31,8 @@ setup_fcitx () {
   export QT_IM_MODULE=fcitx
   export XMODIFIERS=@im=fcitx
   ''' >> ~/.xprofile
+
+  # Language supportからIM Systemをfcitxにしておく
 }
 
 setup_git () {
