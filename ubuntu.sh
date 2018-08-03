@@ -1,4 +1,5 @@
 #!/bin/bash
+set -eu
 
 setup_base() {
   echo "install base packages"
