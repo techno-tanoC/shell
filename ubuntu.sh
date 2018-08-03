@@ -80,13 +80,23 @@ setup_ruby () {
   git clone https://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-build
 }
 
+setup_rust() {
+  echo "install rustup"
+  curl https://sh.rustup.rs -sSf | sh -s -- -y
+
+  # cargo-update requires cmake
+  # cargo install cargo-watch just cargo-update cargo-outdated cargo-tree
+}
+
 setup_base
 setup_app
 setup_fcitx
 setup_git
 setup_docker
 setup_asdf
+
 setup_ruby
+setup_rust
 
 LANG=C xdg-user-dirs-gtk-update
 
