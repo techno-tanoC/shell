@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 setup_base() {
   echo "install base packages"
@@ -56,11 +56,26 @@ setup_docker () {
   sudo chmod +x /usr/local/bin/docker-compose
 }
 
+setup_asdf() {
+  echo "install asdf and plugins"
+
+  sudo apt install -y autoconf make gcc libssl-dev libncurses5-dev
+
+  git clone https://github.com/asdf-vm/asdf.git ~/.asdf
+  . "$HOME/.asdf/asdf.sh"
+
+  asdf plugin-add nodejs https://github.com/asdf-vm/asdf-nodejs.git
+  bash ~/.asdf/plugins/nodejs/bin/import-release-team-keyring
+  asdf plugin-add erlang https://github.com/asdf-vm/asdf-erlang.git
+  asdf plugin-add elixir https://github.com/asdf-vm/asdf-elixir.git
+}
+
 setup_base
 setup_app
 setup_fcitx
 setup_git
 setup_docker
+setup_asdf
 
 LANG=C xdg-user-dirs-gtk-update
 
