@@ -112,7 +112,7 @@ setup_rust
 
 LANG=C xdg-user-dirs-gtk-update
 
-echo "register ssh:key"
-echo "\e[32m$(cat "$HOME/.ssh/id_rsa.pub")\e[m"
+echo -e "register ssh:key"
+echo -e "\e[32m$(cat "$HOME/.ssh/id_rsa.pub")\e[m"
 echo
-echo "\e[32mPlease log out. You may be necessary to reboot\e[m"
+echo -e "\e[32mPlease log out. You may be necessary to reboot\e[m"
