@@ -120,6 +120,13 @@ setup_rust() {
   # cargo install cargo-watch just cargo-update cargo-outdated cargo-tree
 }
 
+setup_stack() {
+  echo "install stack"
+
+  wget -qO- https://get.haskellstack.org/ | sh
+  stack setup
+}
+
 setup_base
 setup_app
 setup_chrome
@@ -131,6 +138,7 @@ setup_docker
 setup_asdf
 setup_ruby
 setup_rust
+setup_stack
 
 LANG=C xdg-user-dirs-gtk-update
 
