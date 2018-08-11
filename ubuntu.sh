@@ -27,6 +27,14 @@ setup_chrome() {
   rm google-chrome-stable_current_amd64.deb
 }
 
+setup_vscode() {
+  echo "install vscode"
+
+  wget https://az764295.vo.msecnd.net/stable/1dfc5e557209371715f655691b1235b6b26a06be/code_1.25.1-1531323788_amd64.deb
+  sudo dpkg -i code_1.25.1-1531323788_amd64.deb
+  rm code_1.25.1-1531323788_amd64.deb
+}
+
 setup_fcitx () {
   echo "install fcitx"
 
@@ -109,6 +117,7 @@ setup_rust() {
 setup_base
 setup_app
 setup_chrome
+setup_vscode
 setup_fcitx
 setup_git
 setup_docker
