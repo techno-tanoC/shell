@@ -118,6 +118,7 @@ setup_rust() {
 
   # cargo-update requires cmake
   # cargo install cargo-watch just cargo-update cargo-outdated cargo-tree
+  # cargo-web requires pkg-config
 }
 
 setup_stack() {
