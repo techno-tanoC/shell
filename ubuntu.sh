@@ -86,6 +86,19 @@ setup_docker () {
   sudo chmod +x /usr/local/bin/docker-compose
 }
 
+setup_peco() {
+  echo "install peco"
+
+  sudo apt install -y peco
+
+  mkdir -p ~/.config/peco
+  echo """
+{
+  "Layout": "bottom-up"
+}
+  """ > ~/.config/peco/config.json
+}
+
 setup_asdf() {
   echo "install asdf and plugins"
 
