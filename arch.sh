@@ -124,7 +124,8 @@ setup_rust () {
   curl https://sh.rustup.rs -sSf | sh -s -- -y
 
   # cargo-update requires cmake
-  # cargo install cargo-watch just cargo-update cargo-outdated cargo-tree
+  # cargo install cargo-watch just cargo-update cargo-outdated cargo-tree watchexec
+  # cargo-web requires pkg-config
 }
 
 setup_base
