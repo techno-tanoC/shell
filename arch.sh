@@ -12,7 +12,7 @@ setup_base () {
   sudo pacman-mirrors -c Japan
   sudo pacman -Syyu
 
-  sudo pacman -S --noconfirm yaourt tree vim base-devel
+  sudo pacman -S --noconfirm yaourt tree vim base-devel zsh
 }
 
 setup_app () {
@@ -24,12 +24,6 @@ setup_app () {
   yaourt -S --noconfirm gnome-session-properties
   yaourt -S --noconfirm google-chrome
   yaourt -S --noconfirm patch slack-desktop
-}
-
-setup_zsh() {
-  echo "install zsh"
-
-  sudo pacman -S --refresh --noconfirm zsh
 }
 
 setup_fcitx () {
@@ -55,22 +49,9 @@ setup_docker () {
 }
 
 setup_git () {
-  echo "install and config git"
-
-  name="techno-tanoC"
-  email="develop.tanoc@gmail.com"
+  echo "install git"
 
   sudo pacman -S --refresh --noconfirm git tig
-
-  git config --global user.name "$name"
-  git config --global user.email "$email"
-  git config --global core.editor vim
-  git config --global merge.tool vimdiff
-  git config --global push.default current
-  git config --global alias.ignore '!gi() { curl -L -s https://www.gitignore.io/api/$@ ;}; gi'
-
-  mkdir ~/.ssh
-  ssh-keygen -t rsa -C "$email" -N "" -f "$HOME/.ssh/id_rsa"
 }
 
 setup_hugo () {
@@ -122,15 +103,10 @@ setup_ruby () {
 setup_rust () {
   echo "install rustup"
   curl https://sh.rustup.rs -sSf | sh -s -- -y
-
-  # cargo-update requires cmake
-  # cargo install cargo-watch just cargo-update cargo-outdated cargo-tree watchexec
-  # cargo-web requires pkg-config
 }
 
 setup_base
 setup_app
-setup_zsh
 setup_fcitx
 setup_docker
 setup_git
@@ -141,8 +117,3 @@ setup_ruby
 setup_rust
 
 LANG=C xdg-user-dirs-gtk-update
-
-echo "register ssh key:"
-echo -e "\e[32m$(cat "$HOME/.ssh/id_rsa.pub")\e[m"
-echo
-echo -e "\e[32mPlease log out. You may be necessary to reboot\e[m"

@@ -33,12 +33,6 @@ setup_vscode() {
   wget https://az764295.vo.msecnd.net/stable/1dfc5e557209371715f655691b1235b6b26a06be/code_1.25.1-1531323788_amd64.deb
   sudo dpkg -i code_1.25.1-1531323788_amd64.deb
   rm code_1.25.1-1531323788_amd64.deb
-
-  code --install-extension ms-ceintl.vscode-language-pack-ja
-  code --install-extension vscodevim.vim
-  code --install-extension justusadam.language-haskell
-  code --install-extension rust-lang.rust
-  code --install-extension mjmcloug.vscode-elixir
 }
 
 setup_fcitx () {
@@ -56,24 +50,9 @@ setup_fcitx () {
 }
 
 setup_git () {
-  echo "install and config git"
-
-  name="techno-tanoC"
-  email="develop.tanoc@gmail.com"
+  echo "install git"
 
   sudo apt install -y git tig
-
-  git config --global user.name "$name"
-  git config --global user.email "$email"
-  git config --global core.editor vim
-  git config --global merge.tool vimdiff
-  git config --global push.default current
-  git config --global alias.ignore '!gi() { curl -L -s https://www.gitignore.io/api/$@ ;}; gi'
-
-  set +e
-  mkdir ~/.ssh
-  set -e
-  ssh-keygen -t rsa -C "$email" -N "" -f "$HOME/.ssh/id_rsa"
 }
 
 setup_docker () {
@@ -127,11 +106,8 @@ setup_ruby () {
 
 setup_rust() {
   echo "install rustup"
-  curl https://sh.rustup.rs -sSf | sh -s -- -y
 
-  # cargo-update requires cmake
-  # cargo install cargo-watch just cargo-update cargo-outdated cargo-tree watchexec
-  # cargo-web requires pkg-config
+  curl https://sh.rustup.rs -sSf | sh -s -- -y
 }
 
 setup_stack() {
@@ -155,8 +131,3 @@ setup_rust
 setup_stack
 
 LANG=C xdg-user-dirs-gtk-update
-
-echo -e "register ssh:key"
-echo -e "\e[32m$(cat "$HOME/.ssh/id_rsa.pub")\e[m"
-echo
-echo -e "\e[32mPlease log out. You may be necessary to reboot\e[m"
