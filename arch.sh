@@ -18,7 +18,7 @@ setup_base () {
 setup_app () {
   echo "install applications"
 
-  sudo pacman -S --refresh --noconfirm virtualbox linux414-virtualbox-host-modules
+  sudo pacman -S --refresh --noconfirm virtualbox linux419-virtualbox-host-modules
   sudo pacman -S --noconfirm transmission-gtk spacefm gnome-control-center eog
   sudo pacman -S --noconfirm vlc qt4
   yaourt -S --noconfirm gnome-session-properties
