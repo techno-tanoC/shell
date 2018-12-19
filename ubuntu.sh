@@ -5,7 +5,7 @@ setup_base() {
   echo "install base packages"
 
   sudo apt update
-  sudo apt upgrade
+  sudo apt upgrade -y
 
   sudo apt install -y tree vim zsh curl
   # chsh -s $(which zsh)
