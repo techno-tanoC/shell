@@ -12,7 +12,7 @@ setup_base () {
   sudo pacman-mirrors -c Japan
   sudo pacman -Syyu
 
-  sudo pacman -S --noconfirm yaourt tree vim base-devel zsh fd
+  sudo pacman -S --noconfirm yay tree vim base-devel zsh fd
 }
 
 setup_app () {
