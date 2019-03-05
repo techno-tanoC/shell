@@ -21,9 +21,9 @@ setup_app () {
   sudo pacman -S --refresh --noconfirm virtualbox linux419-virtualbox-host-modules
   sudo pacman -S --noconfirm transmission-gtk spacefm gnome-control-center eog
   sudo pacman -S --noconfirm vlc qt4
-  yaourt -S --noconfirm gnome-session-properties
-  yaourt -S --noconfirm google-chrome
-  yaourt -S --noconfirm patch slack-desktop
+  yay -S --noconfirm gnome-session-properties
+  yay -S --noconfirm google-chrome
+  yay -S --noconfirm patch slack-desktop
 }
 
 setup_fcitx () {
@@ -63,7 +63,7 @@ setup_peco () {
   echo "install peco"
 
   # It depends on git.
-  yaourt -S --noconfirm peco
+  yay -S --noconfirm peco
 
   # ~/.peco/config.json
   echo """
