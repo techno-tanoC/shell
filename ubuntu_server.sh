@@ -1,8 +1,6 @@
 #!/bin/sh
 
 setup_base () {
-  echo "install base packages"
-
   sudo apt update
   sudo apt upgrade -y
 
@@ -10,21 +8,11 @@ setup_base () {
 }
 
 setup_zsh () {
-  echo "install zsh"
-
   sudo apt install -y zsh
   chsh -s /usr/bin/zsh
 }
 
-setup_git () {
-  echo "install git"
-
-  sudo apt install -y git tig
-}
-
 setup_docker () {
-  echo "install docker"
-
   curl -fsSL get.docker.com | sh -s
   sudo usermod -aG docker $USER
 
@@ -34,5 +22,4 @@ setup_docker () {
 
 setup_base
 setup_zsh
-setup_git
 setup_docker

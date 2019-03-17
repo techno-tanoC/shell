@@ -2,8 +2,6 @@
 set -eu
 
 setup_base() {
-  echo "install base packages"
-
   sudo apt update
   sudo apt upgrade -y
 
@@ -12,14 +10,10 @@ setup_base() {
 }
 
 setup_app() {
-  echo "install applications"
-
   sudo apt install -y transmission virtualbox vlc spacefm gnome-tweak-tool
 }
 
 setup_chrome() {
-  echo "install chrome"
-
   sudo apt install -y chrome-gnome-shell
 
   wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
@@ -28,8 +22,6 @@ setup_chrome() {
 }
 
 setup_fcitx () {
-  echo "install fcitx"
-
   sudo apt install -y fcitx-mozc fcitx-config-common
 
   echo '''
@@ -42,8 +34,6 @@ setup_fcitx () {
 }
 
 setup_docker () {
-  echo "install docker"
-
   curl -fsSL get.docker.com | sh -s
   sudo usermod -aG docker $USER
 
