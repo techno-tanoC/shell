@@ -53,46 +53,9 @@ setup_hugo () {
   sudo pacman -S --noconfirm hugo
 }
 
-# Langages
-
-setup_asdf () {
-  echo "install asdf and plugins"
-
-  sudo pacman -S --refresh --noconfirm gcc make ncurses openssh autoconf
-
-  git clone https://github.com/asdf-vm/asdf.git ~/.asdf
-
-  . $HOME/.asdf/asdf.sh
-
-  asdf plugin-add nodejs https://github.com/asdf-vm/asdf-nodejs.git
-  bash ~/.asdf/plugins/nodejs/bin/import-release-team-keyring
-  asdf plugin-add erlang https://github.com/asdf-vm/asdf-erlang.git
-  asdf plugin-add elixir https://github.com/asdf-vm/asdf-elixir.git
-}
-
-setup_ruby () {
-  echo "install rbenv"
-
-  sudo pacman -S --refresh --noconfirm gcc make openssl readline sqlite
-
-  git clone https://github.com/sstephenson/rbenv.git ~/.rbenv
-  mkdir ~/.rbenv/plugins
-  git clone https://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-build
-}
-
-setup_rust () {
-  echo "install rustup"
-  curl https://sh.rustup.rs -sSf | sh -s -- -y
-}
-
 setup_base
 setup_app
 setup_fcitx
 setup_docker
-
-# Langages
-# setup_asdf
-# setup_ruby
-# setup_rust
 
 LANG=C xdg-user-dirs-gtk-update
