@@ -37,3 +37,5 @@ json="""
 read -sp "Enter github password: " pass
 
 curl -u "$user:$pass" -X POST -d "$json" https://api.github.com/user/keys
+
+git clone git@github.com:techno-tanoC/shell.git
