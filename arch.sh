@@ -112,8 +112,8 @@ setup_docker
 setup_git
 
 # Langages
-setup_asdf
-setup_ruby
-setup_rust
+# setup_asdf
+# setup_ruby
+# setup_rust
 
 LANG=C xdg-user-dirs-gtk-update
