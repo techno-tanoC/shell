@@ -1,5 +1,17 @@
 #!/bin/sh
 
+if [ `lsb_release -is` = "ManjaroLinux" ] ; then
+  sudo pacman-mirrors -c Japan
+  sudo pacman -Syyu
+  sudo pacman -S --noconfirm git tig
+elif [ `lsb_release -is` = "Ubuntu" ] ; then
+  sudo apt update
+  sudo apt upgrade -y
+  sudo apt install -y git tig
+else
+  exit 1
+fi
+
 user="techno-tanoC"
 email="develop.tanoc@gmail.com"
 
