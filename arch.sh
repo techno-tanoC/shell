@@ -48,12 +48,6 @@ setup_docker () {
   sudo systemctl start docker.service
 }
 
-setup_git () {
-  echo "install git"
-
-  sudo pacman -S --refresh --noconfirm git tig
-}
-
 setup_hugo () {
   echo "install hugo"
   sudo pacman -S --noconfirm hugo
@@ -95,7 +89,6 @@ setup_base
 setup_app
 setup_fcitx
 setup_docker
-setup_git
 
 # Langages
 # setup_asdf

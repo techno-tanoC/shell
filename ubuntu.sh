@@ -49,12 +49,6 @@ setup_fcitx () {
   # Language supportからIM Systemをfcitxにしておく
 }
 
-setup_git () {
-  echo "install git"
-
-  sudo apt install -y git tig
-}
-
 setup_docker () {
   echo "install docker"
 
@@ -122,7 +116,6 @@ setup_app
 setup_chrome
 setup_vscode
 setup_fcitx
-setup_git
 setup_docker
 
 setup_asdf
