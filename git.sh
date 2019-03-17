@@ -1,4 +1,5 @@
 #!/bin/sh
+set -eu
 
 if [ `lsb_release -is` = "ManjaroLinux" ] ; then
   sudo pacman-mirrors -c Japan
