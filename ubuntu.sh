@@ -7,7 +7,7 @@ setup_base() {
   sudo apt update
   sudo apt upgrade -y
 
-  sudo apt install -y tree vim zsh curl
+  sudo apt install -y tree vim zsh curl peco
   # chsh -s $(which zsh)
 }
 
@@ -25,14 +25,6 @@ setup_chrome() {
   wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
   sudo dpkg -i google-chrome-stable_current_amd64.deb
   rm google-chrome-stable_current_amd64.deb
-}
-
-setup_vscode() {
-  echo "install vscode"
-
-  wget https://az764295.vo.msecnd.net/stable/1dfc5e557209371715f655691b1235b6b26a06be/code_1.25.1-1531323788_amd64.deb
-  sudo dpkg -i code_1.25.1-1531323788_amd64.deb
-  rm code_1.25.1-1531323788_amd64.deb
 }
 
 setup_fcitx () {
@@ -59,23 +51,9 @@ setup_docker () {
   sudo chmod +x /usr/local/bin/docker-compose
 }
 
-setup_peco() {
-  echo "install peco"
-
-  sudo apt install -y peco
-
-  mkdir -p ~/.config/peco
-  echo """
-{
-  "Layout": "bottom-up"
-}
-  """ > ~/.config/peco/config.json
-}
-
 setup_base
 setup_app
 setup_chrome
-setup_vscode
 setup_fcitx
 setup_docker
 

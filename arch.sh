@@ -48,11 +48,6 @@ setup_docker () {
   sudo systemctl start docker.service
 }
 
-setup_hugo () {
-  echo "install hugo"
-  sudo pacman -S --noconfirm hugo
-}
-
 setup_base
 setup_app
 setup_fcitx
