@@ -12,7 +12,7 @@ setup_base () {
   sudo pacman-mirrors -c Japan
   sudo pacman -Syyu
 
-  sudo pacman -S --noconfirm yay tree vim base-devel zsh fd
+  sudo pacman -S --noconfirm yay tree vim base-devel zsh fd peco
 }
 
 setup_app () {
@@ -57,20 +57,6 @@ setup_git () {
 setup_hugo () {
   echo "install hugo"
   sudo pacman -S --noconfirm hugo
-}
-
-setup_peco () {
-  echo "install peco"
-
-  # It depends on git.
-  yay -S --noconfirm peco
-
-  # ~/.peco/config.json
-  echo """
-{
-  "Layout": "bottom-up"
-}
-  """
 }
 
 # Langages
