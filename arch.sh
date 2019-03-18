@@ -11,7 +11,8 @@ setup_base () {
   sudo pacman-mirrors -c Japan
   sudo pacman -Syyu
 
-  sudo pacman -S --noconfirm yay tree vim base-devel zsh fd peco
+  sudo pacman -S --noconfirm yay tree vim base-devel zsh fd
+  yay -S --noconfirm peco
 }
 
 setup_app () {
