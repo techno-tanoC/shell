@@ -23,7 +23,7 @@ git config --global merge.tool vimdiff
 git config --global push.default current
 git config --global alias.ignore '!gi() { curl -L -s https://www.gitignore.io/api/$@ ;}; gi'
 
-mkdir ~/.ssh
+mkdir -p ~/.ssh
 ssh-keygen -t rsa -C "$email" -N "" -f "$HOME/.ssh/id_rsa"
 
 pub=`cat $HOME/.ssh/id_rsa.pub`
