@@ -3,7 +3,7 @@ set -eu
 
 setup_asdf() {
   if [ `lsb_release -is` = "ManjaroLinux" ] ; then
-    sudo pacman -S --refresh --noconfirm gcc make ncurses openssh autoconf
+    sudo pacman -S --noconfirm gcc make ncurses openssh autoconf
   elif [ `lsb_release -is` = "Ubuntu" ] ; then
     sudo apt install -y autoconf make gcc libssl-dev libncurses5-dev
   else
@@ -23,10 +23,14 @@ setup_asdf() {
 }
 
 setup_ruby() {
+  # refer below:
+  # https://github.com/rbenv/ruby-build/wiki#suggested-build-environment
   if [ `lsb_release -is` = "ManjaroLinux" ] ; then
-    sudo pacman -S --refresh --noconfirm gcc make openssl readline sqlite
+    sudo pacman -S --noconfirm base-devel libffi libyaml openssl zlib
+    sudo pacman -S --noconfirm sqlite
   elif [ `lsb_release -is` = "Ubuntu" ] ; then
-    sudo apt install -y libreadline-dev libssl-dev zlib1g-dev libsqlite3-dev
+    sudo apt install -y autoconf bison build-essential libssl-dev libyaml-dev libreadline6-dev zlib1g-dev libncurses5-dev libffi-dev libgdbm5 libgdbm-dev
+    sudo apt install -y libsqlite3-dev
   else
     exit 1
   fi
