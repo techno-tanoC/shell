@@ -6,8 +6,10 @@ setup_asdf() {
   # https://github.com/asdf-vm/asdf-erlang#before-asdf-install
   if [ `lsb_release -is` = "ManjaroLinux" ] ; then
     sudo pacman -S --noconfirm base-devel ncurses glu mesa wxgtk2 libpng lib ssl unixodbc
+    sudo pacman -S --noconfirm unzip
   elif [ `lsb_release -is` = "Ubuntu" ] ; then
     sudo apt install -y build-essential autoconf m4 libncurses5-dev libwxgtk3.0-dev libgl1mesa-dev libglu1-mesa-dev libpng3 libssh-dev unixodbc-dev xsltproc fop
+    sudo apt install -y unzip
   else
     exit 1
   fi
