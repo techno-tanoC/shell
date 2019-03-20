@@ -4,12 +4,8 @@ setup_base () {
   sudo apt update
   sudo apt upgrade -y
 
-  sudo apt install -y vim tree
-}
-
-setup_zsh () {
-  sudo apt install -y zsh
-  chsh -s /usr/bin/zsh
+  sudo apt install -y vim tree zsh
+  # chsh -s $(which zsh)
 }
 
 setup_docker () {
@@ -21,5 +17,4 @@ setup_docker () {
 }
 
 setup_base
-setup_zsh
 setup_docker
