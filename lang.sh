@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 set -eu
 
 setup_asdf() {
@@ -8,7 +8,7 @@ setup_asdf() {
     sudo pacman -S --noconfirm base-devel ncurses glu mesa wxgtk2 libpng libssh unixodbc
     sudo pacman -S --noconfirm unzip
   elif [ `lsb_release -is` = "Ubuntu" ] ; then
-    sudo apt install -y build-essential autoconf m4 libncurses5-dev libwxgtk3.0-dev libgl1mesa-dev libglu1-mesa-dev libpng3 libssh-dev unixodbc-dev xsltproc fop
+    sudo apt install -y build-essential autoconf m4 libncurses5-dev libwxgtk3.0-dev libgl1-mesa-dev libglu1-mesa-dev libpng-dev libssh-dev unixodbc-dev xsltproc fop
     sudo apt install -y unzip
   else
     exit 1
