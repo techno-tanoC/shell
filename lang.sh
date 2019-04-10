@@ -4,7 +4,9 @@ set -eu
 setup_asdf() {
   # refer below:
   # https://github.com/asdf-vm/asdf-erlang#before-asdf-install
-  if [ `lsb_release -is` = "ManjaroLinux" ] ; then
+  if [ `uname` = "Darwin" ] ; then
+    brew install autoconf wxmac
+  elif [ `lsb_release -is` = "ManjaroLinux" ] ; then
     sudo pacman -S --noconfirm base-devel ncurses glu mesa wxgtk2 libpng libssh unixodbc
     sudo pacman -S --noconfirm unzip
   elif [ `lsb_release -is` = "Ubuntu" ] ; then
