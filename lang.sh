@@ -30,7 +30,9 @@ setup_asdf() {
 setup_ruby() {
   # refer below:
   # https://github.com/rbenv/ruby-build/wiki#suggested-build-environment
-  if [ `lsb_release -is` = "ManjaroLinux" ] ; then
+  if [ `uname` = "Darwin" ] ; then
+    brew install openssl libyaml libffi
+  elif [ `lsb_release -is` = "ManjaroLinux" ] ; then
     sudo pacman -S --noconfirm base-devel libffi libyaml openssl zlib
     sudo pacman -S --noconfirm sqlite
   elif [ `lsb_release -is` = "Ubuntu" ] ; then
