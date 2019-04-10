@@ -1,7 +1,10 @@
 #!/bin/sh
 set -eu
 
-if [ `lsb_release -is` = "ManjaroLinux" ] ; then
+if [ `uname` = "Darwin" ] ; then
+  /usr/bin/ruby -e "`curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install`"
+  brew install git tig
+elif [ `lsb_release -is` = "ManjaroLinux" ] ; then
   sudo pacman-mirrors -c Japan
   sudo pacman -Syyu
   sudo pacman -S --noconfirm git tig
@@ -20,7 +23,9 @@ git config --global user.name "$user"
 git config --global user.email "$email"
 git config --global core.editor vim
 git config --global merge.tool vimdiff
+git config --global merge.ff false
 git config --global push.default current
+git config --global pull.ff only
 git config --global alias.ignore '!gi() { curl -L -s https://www.gitignore.io/api/$@ ;}; gi'
 
 mkdir -p ~/.ssh
