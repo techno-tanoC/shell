@@ -3,8 +3,8 @@
 # common
 code --install-extension ms-ceintl.vscode-language-pack-ja
 code --install-extension pkief.material-icon-theme
-
-# code --install-extension vscodevim.vim
+code --install-extension nonylene.dark-molokai-theme
+code --install-extension vscodevim.vim
 
 # ruby
 code --install-extension rebornix.ruby
