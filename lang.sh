@@ -5,6 +5,9 @@ setup_asdf() {
   # refer below:
   # https://github.com/asdf-vm/asdf-erlang#before-asdf-install
   if [ `uname` = "Darwin" ] ; then
+    # for nodejs
+    brew install coreutils gpg
+    # for erlang
     brew install autoconf wxmac
   elif [ `lsb_release -is` = "ManjaroLinux" ] ; then
     sudo pacman -S --noconfirm base-devel ncurses glu mesa wxgtk2 libpng libssh unixodbc
