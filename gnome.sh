@@ -1,7 +1,5 @@
 #!/bin/sh
 
-mkdir -p ~/.local/share/gnome-shell/extensions/
-
 install_multi_monitors_add_on() {
   # version 17 targets upper gnome 3.24
   URL=https://extensions.gnome.org/extension-data/multi-monitors-add-on%40spin83.v17.shell-extension.zip
@@ -25,6 +23,8 @@ install_dash_to_dock() {
   # gnome-shell-extension-tool -e $NAME
   rm $FILE
 }
+
+mkdir -p ~/.local/share/gnome-shell/extensions/
 
 install_multi_monitors_add_on
 # install_dash_to_dock
