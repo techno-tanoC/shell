@@ -23,9 +23,7 @@ git config --global user.name "$user"
 git config --global user.email "$email"
 git config --global core.editor vim
 git config --global merge.tool vimdiff
-git config --global merge.ff false
 git config --global push.default current
-git config --global pull.ff only
 git config --global alias.ignore '!gi() { curl -L -s https://www.gitignore.io/api/$@ ;}; gi'
 
 mkdir -p ~/.ssh
