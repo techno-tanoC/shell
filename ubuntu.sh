@@ -10,7 +10,11 @@ setup_base() {
 }
 
 setup_app() {
-  sudo apt install -y transmission virtualbox vlc spacefm gnome-tweak-tool
+  sudo apt install -y transmission
+  sudo apt install -y virtualbox
+  sudo apt install -y vlc
+  sudo apt install -y spacefm
+  sudo apt install -y gnome-tweak-tool
 }
 
 setup_chrome() {
