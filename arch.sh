@@ -23,6 +23,7 @@ setup_app () {
   yay -S --noconfirm google-chrome
   yay -S --noconfirm patch slack-desktop
   yay -S --noconfirm visual-studio-code-bin
+  yay -S --noconfirm bitwarden-bin
 }
 
 setup_fcitx () {
