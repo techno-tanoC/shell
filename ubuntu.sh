@@ -5,7 +5,11 @@ setup_base() {
   sudo apt update
   sudo apt upgrade -y
 
-  sudo apt install -y tree vim zsh curl peco
+  sudo apt install -y tree
+  sudo apt install -y vim
+  sudo apt install -y zsh
+  sudo apt install -y curl
+  sudo apt install -y peco
   # chsh -s $(which zsh)
 }
 
