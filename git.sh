@@ -11,7 +11,7 @@ elif [ `lsb_release -is` = "ManjaroLinux" ] ; then
 elif [ `lsb_release -is` = "Ubuntu" ] ; then
   sudo apt update
   sudo apt upgrade -y
-  sudo apt install -y git tig
+  sudo apt install -y git tig curl
 else
   exit 1
 fi
