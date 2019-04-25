@@ -21,8 +21,8 @@ setup_app() {
   sudo apt install -y gnome-tweak-tool
   sudo apt install -y snapd
 
-  snap install slack
-  snap install vscode --classic
+  snap install slack --classic
+  snap install code --classic
   snap install bitwarden
 }
 
