@@ -15,6 +15,11 @@ setup_app() {
   sudo apt install -y vlc
   sudo apt install -y spacefm
   sudo apt install -y gnome-tweak-tool
+  sudo apt install -y snapd
+
+  snap install slack
+  snap install vscode --classic
+  snap install bitwarden
 }
 
 setup_chrome() {
