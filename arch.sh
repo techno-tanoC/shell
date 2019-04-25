@@ -18,6 +18,7 @@ setup_base () {
   sudo pacman -S --noconfirm zsh
   sudo pacman -S --noconfirm fd
   yay -S --noconfirm peco
+  yay -S --noconfirm pv
 }
 
 setup_app () {
