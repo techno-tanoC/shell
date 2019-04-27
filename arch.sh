@@ -2,12 +2,6 @@
 set -eu
 
 setup_base () {
-  # echo '''
-  # [archlinuxfr]
-  # SigLevel = Never
-  # Server = http://repo.archlinux.fr/$arch
-  # ''' | sudo tee -a /etc/pacman.conf
-
   sudo pacman-mirrors -c Japan
   sudo pacman -Syyu
 
