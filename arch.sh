@@ -42,6 +42,12 @@ setup_fcitx () {
   export GTK_IM_MODULE=fcitx
   export QT_IM_MODULE=fcitx
   export XMODIFIERS=@im=fcitx
+
+  # to autostart
+  # fcitx-autostart &
+
+  # to remap capslock to ctrl
+  # setxkbmap -option ctrl:nocaps
   ''' >> ~/.xprofile
 }
 
