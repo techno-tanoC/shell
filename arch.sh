@@ -24,6 +24,7 @@ setup_app () {
   sudo pacman -S --noconfirm vlc qt4
   yay -S --noconfirm gnome-session-properties
   yay -S --noconfirm google-chrome
+  # pacth is needed?
   yay -S --noconfirm patch slack-desktop
   yay -S --noconfirm visual-studio-code-bin
   yay -S --noconfirm bitwarden-bin
