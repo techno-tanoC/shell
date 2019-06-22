@@ -6,11 +6,14 @@ code --install-extension pkief.material-icon-theme
 code --install-extension nonylene.dark-molokai-theme
 code --install-extension vscodevim.vim
 
+# docker
+code --install-extension ms-azuretools.vscode-docker
+
 # ruby
 code --install-extension rebornix.ruby
 
 # elixir
-code --install-extension mjmcloug.vscode-elixir
+code --install-extension jakebecker.elixir-ls
 
 # rust
 code --install-extension rust-lang.rust
