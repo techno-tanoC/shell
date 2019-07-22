@@ -9,9 +9,9 @@ elif [ `lsb_release -is` = "ManjaroLinux" ] ; then
   curl https://sdk.cloud.google.com | bash
   exec -l $SHELL
   gcloud init
-  gcloud components install kubectl
-  sudo pacman -S --noconfirm kubectx
-  yay -S --noconfirm kubernetes-helm
+  yay -S --noconfirm kubectl-bin
+  yay -S --noconfirm kubectx
+  yay -S --noconfirm kubernetes-helm-bin
 elif [ `lsb_release -is` = "Ubuntu" ] ; then
   curl https://sdk.cloud.google.com | bash
   exec -l $SHELL
