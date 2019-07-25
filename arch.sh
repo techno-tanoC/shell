@@ -68,6 +68,11 @@ setup_kube () {
   yay -S --noconfirm kubectx
 }
 
+setup_option () {
+  yay -S --noconfirm calibre
+  yay -S --noconfirm android-tools
+}
+
 setup_base
 setup_app
 setup_fcitx
