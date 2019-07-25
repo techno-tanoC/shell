@@ -30,6 +30,11 @@ setup_app () {
   yay -S --noconfirm bitwarden-bin
 }
 
+setup_option () {
+  yay -S --noconfirm calibre
+  yay -S --noconfirm android-tools
+}
+
 setup_fcitx () {
   sudo pacman -S --refresh --noconfirm fcitx-im fcitx-configtool fcitx-mozc
 
@@ -66,11 +71,6 @@ setup_kube () {
   yay -S --noconfirm kubectl-bin
   yay -S --noconfirm kubernetes-helm-bin
   yay -S --noconfirm kubectx
-}
-
-setup_option () {
-  yay -S --noconfirm calibre
-  yay -S --noconfirm android-tools
 }
 
 setup_base
