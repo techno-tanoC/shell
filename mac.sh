@@ -14,6 +14,7 @@ setup_app() {
   brew cask install visual-studio-code
   brew cask install virtualbox
   brew cask install bitwarden
+  brew cask install slack
   brew cask install boostnote
 }
 
