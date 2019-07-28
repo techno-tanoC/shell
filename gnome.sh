@@ -1,8 +1,8 @@
 #!/bin/sh
 
 install_multi_monitors_add_on() {
-  # version 17 targets upper gnome 3.24
-  URL=https://extensions.gnome.org/extension-data/multi-monitors-add-on%40spin83.v17.shell-extension.zip
+  # version 18 targets upper gnome 3.32
+  URL=https://extensions.gnome.org/extension-data/multi-monitors-add-onspin83.v18.shell-extension.zip
   FILE=multi-monitors-add-on.zip
   NAME=multi-monitors-add-on@spin83
 
