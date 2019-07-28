@@ -34,6 +34,11 @@ setup_app () {
   fc-cache -vf
 }
 
+setup_option () {
+  yay -S --noconfirm calibre
+  yay -S --noconfirm android-tools
+}
+
 setup_fcitx () {
   sudo pacman -S --refresh --noconfirm fcitx-im fcitx-configtool fcitx-mozc
 
@@ -58,9 +63,19 @@ setup_docker () {
   sudo systemctl start docker.service
 }
 
-setup_option () {
-  yay -S --noconfirm calibre
-  yay -S --noconfirm android-tools
+setup_gcloud () {
+  # todo: completion
+  curl https://sdk.cloud.google.com | bash
+  # restart shell
+  # gcloud init
+  # gcloud auth login
+}
+
+setup_kube () {
+  yay -S --noconfirm kubectl-bin
+  yay -S --noconfirm kubernetes-helm-bin
+  yay -S --noconfirm kubectx
+  yay -S --noconfirm istio-bin
 }
 
 setup_base
