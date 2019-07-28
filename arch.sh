@@ -28,6 +28,10 @@ setup_app () {
   yay -S --noconfirm patch slack-desktop
   yay -S --noconfirm visual-studio-code-bin
   yay -S --noconfirm bitwarden-bin
+
+  # install font
+  yay -S ttf-mplus
+  fc-cache -vf
 }
 
 setup_fcitx () {
