@@ -32,6 +32,9 @@ setup_app () {
   # install font
   yay -S ttf-mplus
   fc-cache -vf
+
+  # uninstall terrain
+  sudo pacman -R mesa-demos lib32-mesa-demos
 }
 
 setup_option () {
