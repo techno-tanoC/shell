@@ -6,22 +6,22 @@ setup_base () {
   sudo pacman -Syyu
 
   sudo pacman -S --noconfirm yay
-  sudo pacman -S --noconfirm tree
-  sudo pacman -S --noconfirm vim
-  sudo pacman -S --noconfirm base-devel
-  sudo pacman -S --noconfirm zsh
-  sudo pacman -S --noconfirm fd
+  yay -S --noconfirm tree
+  yay -S --noconfirm vim
+  yay -S --noconfirm base-devel
+  yay -S --noconfirm zsh
+  yay -S --noconfirm fd
   yay -S --noconfirm peco
   yay -S --noconfirm pv
 }
 
 setup_app () {
-  sudo pacman -S --refresh --noconfirm virtualbox linux419-virtualbox-host-modules
-  sudo pacman -S --noconfirm transmission-gtk
-  sudo pacman -S --noconfirm spacefm
-  sudo pacman -S --noconfirm gnome-control-center
-  sudo pacman -S --noconfirm eog
-  sudo pacman -S --noconfirm vlc qt4
+  yay -S --noconfirm virtualbox linux419-virtualbox-host-modules
+  yay -S --noconfirm transmission-gtk
+  yay -S --noconfirm spacefm
+  yay -S --noconfirm gnome-control-center
+  yay -S --noconfirm eog
+  yay -S --noconfirm vlc qt4
   yay -S --noconfirm gnome-session-properties
   yay -S --noconfirm google-chrome
   # pacth is needed?
