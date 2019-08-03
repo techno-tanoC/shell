@@ -74,11 +74,8 @@ setup_gcloud () {
   # gcloud auth login
 }
 
-setup_kube () {
-  yay -S --noconfirm kubectl-bin
-  yay -S --noconfirm kubernetes-helm-bin
-  yay -S --noconfirm kubectx
-  yay -S --noconfirm istio-bin
+setup_aws () {
+  yay -S --noconfirm aws-cli
 }
 
 setup_base

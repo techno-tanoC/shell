@@ -24,10 +24,3 @@ setup_gcloud () {
   # gcloud init
   # gcloud auth login
 }
-
-setup_kube () {
-  brew install kubernetes-cli
-  brew install kubectx
-  brew install kubernetes-helm
-  brew install istioctl
-}
