@@ -8,6 +8,7 @@ setup_base () {
   sudo pacman -S --noconfirm yay
   yay -S --noconfirm tree
   yay -S --noconfirm vim
+  # binutils installs the strip command
   yay -S --noconfirm base-devel
   yay -S --noconfirm zsh
   yay -S --noconfirm fd
@@ -24,7 +25,6 @@ setup_app () {
   yay -S --noconfirm vlc qt4
   yay -S --noconfirm gnome-session-properties
   yay -S --noconfirm google-chrome
-  # pacth is needed?
   yay -S --noconfirm patch slack-desktop
   yay -S --noconfirm visual-studio-code-bin
   yay -S --noconfirm bitwarden-bin
@@ -68,10 +68,16 @@ setup_docker () {
 
 setup_gcloud () {
   # todo: completion
-  curl https://sdk.cloud.google.com | bash
+  name=google-cloud-sdk
+  wget -O ${name}.tar.gz https://dl.google.com/dl/cloudsdk/channels/rapid/downloads/google-cloud-sdk-196.0.0-linux-x86_64.tar.gz
+  tar -zxvf ${name}.tar.gz
+  ${name}/install.sh --usage-reporting false
+  rm ${name}.tar.gz
+  # curl https://sdk.cloud.google.com | bash -s - --disable-prompts
   # restart shell
   # gcloud init
   # gcloud auth login
+  # gcloud config set_disable_usage_reporting true
 }
 
 setup_aws () {
