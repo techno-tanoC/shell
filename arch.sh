@@ -21,10 +21,10 @@ setup_app () {
   yay -S --noconfirm transmission-gtk
   yay -S --noconfirm spacefm
   yay -S --noconfirm gnome-control-center
-  yay -S --noconfirm eog
-  yay -S --noconfirm vlc qt4
   yay -S --noconfirm gnome-session-properties
   yay -S --noconfirm gnome-tweaks
+  yay -S --noconfirm eog
+  yay -S --noconfirm vlc qt4
   yay -S --noconfirm google-chrome
   yay -S --noconfirm patch slack-desktop
   yay -S --noconfirm visual-studio-code-bin
