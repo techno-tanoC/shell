@@ -70,8 +70,10 @@ setup_docker () {
 setup_gcloud () {
   # todo: completion
   name=google-cloud-sdk
-  wget -O ${name}.tar.gz https://dl.google.com/dl/cloudsdk/channels/rapid/downloads/google-cloud-sdk-196.0.0-linux-x86_64.tar.gz
-  tar -zxvf ${name}.tar.gz
+  version=257.0.0
+  wget -O ${name}.tar.gz https://dl.google.com/dl/cloudsdk/channels/rapid/downloads/google-cloud-sdk-${version}-linux-x86_64.tar.gz
+  mkdir -p ~/.gcloud/${version}
+  tar -zxf ${name}.tar.gz -C ~/.gcloud/${version}
   ${name}/install.sh --usage-reporting false
   rm ${name}.tar.gz
   # curl https://sdk.cloud.google.com | bash -s - --disable-prompts
