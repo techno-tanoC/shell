@@ -14,6 +14,7 @@ setup_base () {
   yay -S --noconfirm fd
   yay -S --noconfirm peco
   yay -S --noconfirm pv
+  yay -S --noconfirm ripgrep
 }
 
 setup_app () {

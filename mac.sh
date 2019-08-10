@@ -7,6 +7,7 @@ setup_base() {
   brew install zsh
   brew install fd
   brew install peco
+  brew install ripgrep
 }
 
 setup_app() {
