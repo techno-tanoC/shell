@@ -9,6 +9,9 @@ code --install-extension vscodevim.vim
 # docker
 code --install-extension ms-azuretools.vscode-docker
 
+# terraform
+code --install-extension mauve.terraform
+
 # ruby
 code --install-extension rebornix.ruby
 
