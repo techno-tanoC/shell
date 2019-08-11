@@ -83,6 +83,7 @@ setup_gcloud() {
   # restart shell
   # gcloud init
   # gcloud auth login
+  # gcloud auth application-default login
   # gcloud config set_disable_usage_reporting true
 }
 
