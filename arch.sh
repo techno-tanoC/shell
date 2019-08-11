@@ -42,7 +42,8 @@ setup_app () {
 
 setup_option () {
   yay -S --noconfirm calibre
-  yay -S --noconfirm android-tools
+  yay -S --noconfirm android-tools android-udev
+  yay -S --noconfirm kdenlive
 }
 
 setup_fcitx () {
