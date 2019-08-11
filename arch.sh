@@ -33,7 +33,7 @@ setup_app () {
   yay -S --noconfirm xsel
 
   # install font
-  yay -S ttf-mplus
+  yay -S --noconfirm  ttf-mplus
   fc-cache -vf
 
   # uninstall terrain
