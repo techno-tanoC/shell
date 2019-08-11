@@ -52,7 +52,7 @@ setup_ruby() {
   git clone https://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-build
 }
 
-setup_rust () {
+setup_rust() {
   curl https://sh.rustup.rs -sSf | sh -s -- -y
 }
 

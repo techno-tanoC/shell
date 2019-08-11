@@ -19,7 +19,7 @@ setup_app() {
   brew cask install boostnote
 }
 
-setup_gcloud () {
+setup_gcloud() {
   # todo: completion
   brew cask install google-cloud-sdk
   # gcloud init

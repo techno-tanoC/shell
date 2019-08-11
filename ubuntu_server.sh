@@ -1,7 +1,7 @@
 #!/bin/sh
 set -eu
 
-setup_base () {
+setup_base() {
   sudo apt update
   sudo apt upgrade -y
 
@@ -9,7 +9,7 @@ setup_base () {
   # chsh -s $(which zsh)
 }
 
-setup_docker () {
+setup_docker() {
   sudo apt-get install -y apt-transport-https ca-certificates curl software-properties-common
   curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
   sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"

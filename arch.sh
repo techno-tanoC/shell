@@ -1,7 +1,7 @@
 #!/bin/sh
 set -eu
 
-setup_base () {
+setup_base() {
   sudo pacman-mirrors -c Japan
   sudo pacman -Syyu
 
@@ -17,7 +17,7 @@ setup_base () {
   yay -S --noconfirm ripgrep
 }
 
-setup_app () {
+setup_app() {
   yay -S --noconfirm virtualbox linux419-virtualbox-host-modules
   yay -S --noconfirm transmission-gtk
   yay -S --noconfirm spacefm
@@ -40,13 +40,13 @@ setup_app () {
   sudo pacman -R mesa-demos lib32-mesa-demos
 }
 
-setup_option () {
+setup_option() {
   yay -S --noconfirm calibre
   yay -S --noconfirm android-tools android-udev
   yay -S --noconfirm kdenlive
 }
 
-setup_fcitx () {
+setup_fcitx() {
   sudo pacman -S --refresh --noconfirm fcitx-im fcitx-configtool fcitx-mozc
 
   echo '''
@@ -62,7 +62,7 @@ setup_fcitx () {
   ''' >> ~/.xprofile
 }
 
-setup_docker () {
+setup_docker() {
   sudo pacman -S --refresh --noconfirm docker docker-compose
   sudo usermod -aG docker $USER
 
@@ -70,7 +70,7 @@ setup_docker () {
   sudo systemctl start docker.service
 }
 
-setup_gcloud () {
+setup_gcloud() {
   # todo: completion
   name=google-cloud-sdk
   version=257.0.0
@@ -86,7 +86,7 @@ setup_gcloud () {
   # gcloud config set_disable_usage_reporting true
 }
 
-setup_aws () {
+setup_aws() {
   yay -S --noconfirm aws-cli
 }
 
