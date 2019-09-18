@@ -5,6 +5,7 @@ code --install-extension ms-ceintl.vscode-language-pack-ja
 code --install-extension pkief.material-icon-theme
 code --install-extension nonylene.dark-molokai-theme
 code --install-extension vscodevim.vim
+code --install-extension atishay-jain.all-autocomplete
 
 # docker
 code --install-extension ms-azuretools.vscode-docker
