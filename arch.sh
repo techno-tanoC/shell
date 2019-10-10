@@ -64,7 +64,7 @@ setup_fcitx() {
 }
 
 setup_docker() {
-  sudo pacman -S --refresh --noconfirm docker docker-compose
+  sudo pacman -S --refresh --noconfirm docker docker-compose docker-machine
   sudo usermod -aG docker $USER
 
   sudo systemctl enable docker.service
