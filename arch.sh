@@ -18,6 +18,7 @@ setup_base() {
 }
 
 setup_app() {
+  # VM の背景が透明になる場合は Kvantum が原因かも
   yay -S --noconfirm virtualbox linux419-virtualbox-host-modules
   yay -S --noconfirm transmission-gtk
   yay -S --noconfirm spacefm
