@@ -20,9 +20,9 @@ user="techno-tanoC"
 email="develop.tanoc@gmail.com"
 
 mkdir -p ~/.ssh
-ssh-keygen -t rsa -C "$email" -N "" -f "$HOME/.ssh/id_rsa"
+ssh-keygen -t ed25519 -C "$email" -N "" -f "$HOME/.ssh/id_ed25519"
 
-pub=`cat $HOME/.ssh/id_rsa.pub`
+pub=`cat $HOME/.ssh/id_ed25519.pub`
 host=`hostname`
 json="""
 {
