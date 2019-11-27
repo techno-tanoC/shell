@@ -42,12 +42,6 @@ setup_app() {
   sudo pacman -R mesa-demos lib32-mesa-demos
 }
 
-setup_option() {
-  yay -S --noconfirm calibre
-  yay -S --noconfirm android-tools android-udev
-  yay -S --noconfirm kdenlive
-}
-
 setup_fcitx() {
   sudo pacman -S --refresh --noconfirm fcitx-im fcitx-configtool fcitx-mozc
 

@@ -1,3 +1,16 @@
+## Apps
+### Book viewer
+calibre
+
+### adb
+android-tools android-udev
+
+### Movie editor
+kenlive
+
+### CD ripper
+asunder
+
 ## キーボード周り
 
 - fcitxインストール後にキーボードレイアウトがおかしい時はfcitx-settinのキーボードが日本語になっているか確認
