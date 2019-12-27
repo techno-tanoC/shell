@@ -41,3 +41,9 @@ mkdir -p ~/.local/share/gnome-shell/extensions/
 
 install_multi_monitors_add_on
 # install_dash_to_dock
+
+# multi monitors add on
+# dash to dock
+# clipboard indiccator
+# shelltile
+
