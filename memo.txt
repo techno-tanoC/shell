@@ -26,6 +26,14 @@ asunder
 ## ssh-copy-id
 `ssh-copy-id user@ip-address`
 
-## firefox でホイールの横クリックの移動量を変える
+## firefox
+### ホイールの横クリックの移動量を変える
 about:config -> mousewheel.default.delta_multiplier_x
+
+### URLバーをクリックした時に全て選択する
+browser.urlbar.clickSelectsAll
+
+## manjaro linux に nvidia のドライバを入れる
+# https://wiki.manjaro.org/index.php?title=Configure_NVIDIA_(non-free)_settings_and_load_them_on_Startup
+sudo mhwd -a pci nonfree 0300
 
