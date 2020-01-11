@@ -22,3 +22,4 @@ asdf plugin-add kustomize https://github.com/Banno/asdf-kustomize.git
 asdf plugin-add helm https://github.com/Antiarchitect/asdf-helm.git
 asdf plugin-add istioctl https://github.com/rafik8/asdf-istioctl.git
 asdf plugin-add kind https://github.com/reegnz/asdf-kind.git
+

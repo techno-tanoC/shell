@@ -25,3 +25,4 @@ setup_gcloud() {
   # gcloud init
   # gcloud auth login
 }
+

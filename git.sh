@@ -39,3 +39,4 @@ echo
 curl -X POST -u "$user:$pass" -H "X-GitHub-OTP: ${otp}" -d "$json" https://api.github.com/user/keys
 
 git clone git@github.com:techno-tanoC/shell.git
+

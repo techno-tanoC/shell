@@ -30,3 +30,4 @@ code --install-extension necinc.elmmet
 # devops
 code --install-extension ms-azuretools.vscode-docker
 code --install-extension mauve.terraform
+
