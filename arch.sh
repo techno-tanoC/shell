@@ -6,36 +6,35 @@ setup_base() {
   sudo pacman -Syyu
 
   sudo pacman -S --noconfirm yay
-  yay -S --noconfirm tree
-  yay -S --noconfirm vim
+  sudo pacman -S --noconfirm tree
+  sudo pacman -S --noconfirm vim
   # binutils installs the strip command
-  yay -S --noconfirm base-devel
-  yay -S --noconfirm zsh
-  yay -S --noconfirm fd
+  sudo pacman -S --noconfirm base-devel
+  sudo pacman -S --noconfirm zsh
+  sudo pacman -S --noconfirm fd
+  sudo pacman -S --noconfirm ripgrep
   yay -S --noconfirm peco
-  yay -S --noconfirm pv
-  yay -S --noconfirm ripgrep
 }
 
 setup_app() {
   # VM の背景が透明になる場合は Kvantum が原因かも
-  yay -S --noconfirm virtualbox linux54-virtualbox-host-modules
-  yay -S --noconfirm transmission-gtk
-  yay -S --noconfirm spacefm
-  yay -S --noconfirm gnome-control-center
+  sudo pacman -S --noconfirm virtualbox linux54-virtualbox-host-modules
+  sudo pacman -S --noconfirm transmission-gtk
+  sudo pacman -S --noconfirm spacefm
+  sudo pacman -S --noconfirm gnome-control-center
   yay -S --noconfirm gnome-session-properties
-  yay -S --noconfirm gnome-tweaks
-  yay -S --noconfirm eog
-  yay -S --noconfirm vlc
-  yay -S --noconfirm google-chrome
+  sudo pacman -S --noconfirm gnome-tweaks
+  sudo pacman -S --noconfirm eog
+  sudo pacman -S --noconfirm vlc
+  # yay -S --noconfirm google-chrome
   yay -S --noconfirm patch slack-desktop
   yay -S --noconfirm visual-studio-code-bin
   yay -S --noconfirm bitwarden-bin
   yay -S --noconfirm xsel
 
   # install font
-  yay -S --noconfirm otf-ipaexfont
-  yay -S --noconfirm noto-fonts-emoji
+  sudo pacman -S --noconfirm otf-ipaexfont
+  sudo pacman -S --noconfirm noto-fonts-emoji
   fc-cache -vf
 
   # uninstall terrain
