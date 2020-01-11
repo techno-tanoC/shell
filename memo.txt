@@ -25,3 +25,7 @@ asunder
 
 ## ssh-copy-id
 `ssh-copy-id user@ip-address`
+
+## firefox でホイールの横クリックの移動量を変える
+about:config -> mousewheel.default.delta_multiplier_x
+
