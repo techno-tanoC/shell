@@ -1,4 +1,5 @@
 #!/bin/sh
+set -eu
 
 install_add_on() {
   URL=$1

@@ -1,11 +1,10 @@
 #!/bin/bash
 set -eu
 
+set +e
 git clone https://github.com/asdf-vm/asdf.git ~/.asdf
-
-set +u
 . $HOME/.asdf/asdf.sh
-set -u
+set -e
 
 asdf plugin-add nodejs https://github.com/asdf-vm/asdf-nodejs.git
 bash ~/.asdf/plugins/nodejs/bin/import-release-team-keyring

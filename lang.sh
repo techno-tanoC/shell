@@ -19,11 +19,10 @@ setup_asdf() {
     exit 1
   fi
 
+  set +e
   git clone https://github.com/asdf-vm/asdf.git ~/.asdf
-
-  set +u
   . $HOME/.asdf/asdf.sh
-  set -u
+  set -e
 
   asdf plugin-add erlang https://github.com/asdf-vm/asdf-erlang.git
   asdf plugin-add elixir https://github.com/asdf-vm/asdf-elixir.git
