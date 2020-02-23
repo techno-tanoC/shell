@@ -37,7 +37,7 @@ setup_ruby() {
     sudo pacman -S --noconfirm base-devel libffi libyaml openssl zlib
     sudo pacman -S --noconfirm sqlite
   elif [ `lsb_release -is` = "Ubuntu" ] ; then
-    sudo apt install -y autoconf bison build-essential libssl-dev libyaml-dev libreadline6-dev zlib1g-dev libncurses5-dev libffi-dev libgdbm5 libgdbm-dev
+    sudo apt install -y autoconf bison build-essential libssl-dev libyaml-dev libreadline6-dev zlib1g-dev libncurses5-dev libffi-dev libgdbm6 libgdbm-dev
     sudo apt install -y libsqlite3-dev
   else
     exit 1
