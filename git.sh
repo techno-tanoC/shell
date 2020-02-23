@@ -19,7 +19,7 @@ fi
 email="develop.tanoc@gmail.com"
 
 mkdir -p ~/.ssh
-ssh-keygen -t ed25519 -C "$email" -N "" -f "$HOME/.ssh/id_ed25519"
+ssh-keygen -t ed25519 -C "$(hostname)" -N "" -f "$HOME/.ssh/id_ed25519"
 
 host=`hostname`
 pub=`cat $HOME/.ssh/id_ed25519.pub`
