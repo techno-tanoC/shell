@@ -24,4 +24,3 @@ setup_base
 setup_docker
 
 # chsh -s $(which zsh)
-

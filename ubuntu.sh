@@ -65,4 +65,3 @@ setup_fcitx
 setup_docker
 
 LANG=C xdg-user-dirs-gtk-update
-

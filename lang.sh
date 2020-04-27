@@ -55,4 +55,3 @@ setup_rust() {
 setup_asdf
 setup_ruby
 setup_rust
-
