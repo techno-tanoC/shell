@@ -12,39 +12,15 @@ install_add_on() {
   rm $FILE
 }
 
-install_multi_monitors_add_on() {
-  # version 18 targets upper gnome 3.32
-  URL=https://extensions.gnome.org/extension-data/multi-monitors-add-onspin83.v18.shell-extension.zip
-  FILE=multi-monitors-add-on.zip
-  NAME=multi-monitors-add-on@spin83
-
-  install_add_on $URL $FILE $NAME
-}
-
-install_dash_to_dock() {
-  # version 64 targets gnome 3.18 ~ 3.30
-  URL=https://extensions.gnome.org/extension-data/dash-to-dock%40micxgx.gmail.com.v64.shell-extension.zip
-  FILE=dash-to-dock.zip
-  NAME=dash-to-dock@micxgx.gmail.com
-
-  install_add_on $URL $FILE $NAME
-}
-
-install_shell_tile() {
-  # https://extensions.gnome.org/extension/657/shelltile/
-}
-
-install_gtile() {
-  # https://extensions.gnome.org/extension/28/gtile/
-}
-
-mkdir -p ~/.local/share/gnome-shell/extensions/
-
-install_multi_monitors_add_on
-# install_dash_to_dock
+# dash_to_dock
+# https://extensions.gnome.org/extension/307/dash-to-dock/
 
 # multi monitors add on
-# dash to dock
+# https://extensions.gnome.org/extension/921/multi-monitors-add-on/
+
 # clipboard indiccator
+# https://extensions.gnome.org/extension/779/clipboard-indicator/
+
 # shelltile
+# https://extensions.gnome.org/extension/657/shelltile/
 
