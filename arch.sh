@@ -66,14 +66,16 @@ setup_docker() {
 }
 
 setup_gcloud() {
+  yay -S google-cloud-sdk
+
   # todo: completion
-  name=google-cloud-sdk
-  version=257.0.0
-  wget -O ${name}.tar.gz https://dl.google.com/dl/cloudsdk/channels/rapid/downloads/google-cloud-sdk-${version}-linux-x86_64.tar.gz
-  mkdir -p ~/.gcloud/${version}
-  tar -zxf ${name}.tar.gz -C ~/.gcloud/${version}
-  ${name}/install.sh --usage-reporting false
-  rm ${name}.tar.gz
+  # name=google-cloud-sdk
+  # version=257.0.0
+  # wget -O ${name}.tar.gz https://dl.google.com/dl/cloudsdk/channels/rapid/downloads/google-cloud-sdk-${version}-linux-x86_64.tar.gz
+  # mkdir -p ~/.gcloud/${version}
+  # tar -zxf ${name}.tar.gz -C ~/.gcloud/${version}
+  # ${name}/install.sh --usage-reporting false
+  # rm ${name}.tar.gz
   # curl https://sdk.cloud.google.com | bash -s - --disable-prompts
   # restart shell
   # gcloud init
@@ -83,7 +85,13 @@ setup_gcloud() {
 }
 
 setup_aws() {
-  yay -S --noconfirm aws-cli
+  mkdir temp
+  cd temp
+  curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+  unzip awscliv2.zip
+  sudo ./aws/install
+  cd ..
+  rm -rf temp
 }
 
 setup_base
