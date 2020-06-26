@@ -38,7 +38,7 @@ setup_app() {
   fc-cache -vf
 
   # uninstall terrain
-  sudo pacman -R mesa-demos lib32-mesa-demos
+  sudo pacman -R --noconfirm mesa-demos lib32-mesa-demos
 }
 
 setup_fcitx() {
