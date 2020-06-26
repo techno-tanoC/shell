@@ -1,6 +1,9 @@
 #!/bin/bash
 set -eu
 
+echo "Did you copy ssh keys?"
+read
+
 if [ `uname` = "Darwin" ] ; then
   /usr/bin/ruby -e "`curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install`"
   brew install git tig
