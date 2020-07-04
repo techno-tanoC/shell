@@ -22,7 +22,7 @@ git clone https://github.com/sstephenson/rbenv.git ~/.rbenv
 mkdir -p ~/.rbenv/plugins
 git clone https://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-build
 
-# gem install bundler pry rails
+# gem install pry rails
 
 # rustup
 # curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
