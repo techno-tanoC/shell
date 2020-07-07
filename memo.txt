@@ -9,7 +9,15 @@ android-tools android-udev
 kenlive
 
 ### CD ripper
-asunder
+
+```
+yay -S cdrdao
+yay -S cdemu-client linux56-vhba-module
+```
+
+```
+cdrdao read-cd --read-raw --datafile 'TITLE'.{bin,toc}
+```
 
 ## キーボード周り
 
