@@ -42,5 +42,8 @@ about:config -> mousewheel.default.delta_multiplier_x
 browser.urlbar.clickSelectsAll
 
 ## manjaro linux に nvidia のドライバを入れる
-# https://wiki.manjaro.org/index.php?title=Configure_NVIDIA_(non-free)_settings_and_load_them_on_Startup
+https://wiki.manjaro.org/index.php?title=Configure_NVIDIA_(non-free)_settings_and_load_them_on_Startup
 sudo mhwd -a pci nonfree 0300
+
+## スピーカーの音量が大きすぎる
+https://chrisjean.com/fix-for-usb-audio-is-too-loud-and-mutes-at-low-volume-in-ubuntu/
