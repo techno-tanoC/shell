@@ -35,15 +35,10 @@ setup_chrome() {
 }
 
 setup_fcitx() {
-  sudo apt install -y fcitx-mozc fcitx-config-common
+  sudo apt install -y fcitx-mozc
 
-  echo '''
-  export GTK_IM_MODULE=fcitx
-  export QT_IM_MODULE=fcitx
-  export XMODIFIERS=@im=fcitx
-  ''' >> ~/.xprofile
-
-  # Language supportからIM Systemをfcitxにしておく
+  # Setting -> Language and Regionのmanage installed languagesからIM Systemをfcitxにしておく
+  # https://kinakoankon.net/ubuntu-20-04-japanese-input-ibus-fcitx-mozc/
 }
 
 setup_docker() {
