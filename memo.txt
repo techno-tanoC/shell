@@ -45,5 +45,15 @@ browser.urlbar.clickSelectsAll
 https://wiki.manjaro.org/index.php?title=Configure_NVIDIA_(non-free)_settings_and_load_them_on_Startup
 sudo mhwd -a pci nonfree 0300
 
+## ubuntu 20.04 に nvidia のドライバを入れる
+
+- `ubuntu-drivers devices` で推奨ドライバを確認
+- `sudo apt install nvidia-driver-450` でドライバをインストール
+- 再起動する
+- `nvidia-smi` で動作確認
+
+事前に nouveau を無効化しないといけないかも
+https://www.server-world.info/query?os=Ubuntu_20.04&p=nvidia&f=1
+
 ## スピーカーの音量が大きすぎる
 https://chrisjean.com/fix-for-usb-audio-is-too-loud-and-mutes-at-low-volume-in-ubuntu/
