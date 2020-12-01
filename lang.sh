@@ -29,7 +29,7 @@ setup_ruby() {
 
 setup_rust() {
   curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
-  source ~/.zshrc
+  # source ~/.zshrc
 
   # cargo
   # cargo-update requires cmake
@@ -56,7 +56,7 @@ setup_elixir() {
   elif [ `lsb_release -is` = "ManjaroLinux" ] ; then
     sudo pacman -S --needed --noconfirm base-devel ncurses glu mesa wxgtk2 libpng libssh unixodbc
   elif [ `lsb_release -is` = "Ubuntu" ] ; then
-    sudo apt-get -y install build-essential autoconf m4 libncurses5-dev libwxgtk3.0-dev libgl1-mesa-dev libglu1-mesa-dev libpng-dev libssh-dev unixodbc-dev xsltproc fop
+    sudo apt-get -y install build-essential autoconf m4 libncurses5-dev libwxgtk3.0-gtk3-dev libgl1-mesa-dev libglu1-mesa-dev libpng-dev libssh-dev unixodbc-dev xsltproc fop libxml2-utils libncurses-dev openjdk-11-jdk
     sudo apt install -y unzip
   else
     echo "unsupported OS"
