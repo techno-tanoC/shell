@@ -20,10 +20,12 @@ setup_app() {
   sudo apt install -y spacefm
   sudo apt install -y gnome-tweak-tool
   sudo apt install -y snapd
+  sudo apt install -y xsel
 
   snap install slack --classic
   snap install code --classic
   snap install bitwarden
+  snap install discord
 }
 
 setup_chrome() {
@@ -46,10 +48,15 @@ setup_docker() {
   sudo usermod -aG docker $USER
 }
 
+setup_gcloud() {
+  snap install google-cloud-sdk --classic
+}
+
 setup_base
 setup_app
-setup_chrome
+# setup_chrome
 setup_fcitx
 setup_docker
+setup_gcloud
 
 LANG=C xdg-user-dirs-gtk-update
