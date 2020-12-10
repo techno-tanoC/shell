@@ -29,7 +29,7 @@ setup_app() {
   # yay -S --noconfirm google-chrome
   yay -S --noconfirm patch slack-desktop
   yay -S --noconfirm visual-studio-code-bin
-  yay -S --noconfirm bitwarden-bin
+  yay -S --noconfirm bitwarden
   yay -S --noconfirm xsel
 
   # install font
