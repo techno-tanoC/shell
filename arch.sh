@@ -54,7 +54,7 @@ setup_fcitx() {
 
   # to remap capslock to ctrl
   # setxkbmap -option ctrl:nocaps
-  ''' >> ~/.xprofile
+  ''' | sudo tee -a /etc/environment
 }
 
 setup_docker() {
