@@ -18,7 +18,7 @@ setup_base() {
 
 setup_app() {
   # VM の背景が透明になる場合は Kvantum が原因かも
-  sudo pacman -S --noconfirm virtualbox linux58-virtualbox-host-modules
+  sudo pacman -S --noconfirm virtualbox linux59-virtualbox-host-modules
   sudo pacman -S --noconfirm transmission-gtk
   sudo pacman -S --noconfirm spacefm
   sudo pacman -S --noconfirm gnome-control-center
