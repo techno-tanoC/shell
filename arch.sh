@@ -66,7 +66,7 @@ setup_docker() {
 }
 
 setup_gcloud() {
-  yay -S google-cloud-sdk
+  yay -S --noconfirm google-cloud-sdk
 }
 
 setup_aws() {
