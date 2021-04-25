@@ -31,6 +31,8 @@ setup_rust() {
   curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
   # source ~/.zshrc
 
+  # rustup target add x86_64-unknown-linux-musl
+
   # cargo
   # cargo-update requires cmake
   # cargo-web requires pkg-config
