@@ -86,7 +86,7 @@ setup_aws() {
   # https://docs.aws.amazon.com/ja_jp/eks/latest/userguide/install-aws-iam-authenticator.html
   mkdir -p ~/bin
   cd ~/bin
-  curl -o aws-iam-authenticator https://amazon-eks.s3.us-west-2.amazonaws.com/1.17.7/2020-07-08/bin/linux/amd64/aws-iam-authenticator
+  curl -o aws-iam-authenticator https://amazon-eks.s3.us-west-2.amazonaws.com/1.19.6/2021-01-05/bin/linux/amd64/aws-iam-authenticator
   chmod +x ./aws-iam-authenticator
   cd -
 }
