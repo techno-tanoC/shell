@@ -32,8 +32,8 @@ setup_app() {
   yay -S --noconfirm visual-studio-code-bin
   yay -S --noconfirm bitwarden-bin
   yay -S --noconfirm xsel
-  # yay -S --noconfirm insomnia-bin
-  # yay -S --noconfirm ngrok-bin
+  yay -S --noconfirm insomnia-bin
+  yay -S --noconfirm ngrok-bin
 
   # install font
   sudo pacman -S --noconfirm otf-ipaexfont
