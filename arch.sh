@@ -13,6 +13,7 @@ setup_base() {
   sudo pacman -S --noconfirm zsh
   sudo pacman -S --noconfirm fd
   sudo pacman -S --noconfirm ripgrep
+  sudo pacman -S --noconfirm dnsutils
   yay -S --noconfirm peco
 }
 
