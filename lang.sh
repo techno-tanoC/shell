@@ -79,7 +79,11 @@ setup_elm() {
 }
 
 setup_infra() {
+  # terraform
   asdf plugin-add terraform https://github.com/Banno/asdf-hashicorp.git
+
+  # gcloud
+  asdf plugin add gcloud https://github.com/jthegedus/asdf-gcloud
 
   # k8s
   asdf plugin-add kubectl https://github.com/Banno/asdf-kubectl.git
