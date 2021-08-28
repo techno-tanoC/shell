@@ -26,7 +26,6 @@ setup_ruby() {
   # gem install pry rails solargraph
 }
 
-
 setup_rust() {
   curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
   # source ~/.zshrc
