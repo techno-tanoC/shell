@@ -85,6 +85,9 @@ setup_infra() {
   # gcloud
   asdf plugin add gcloud https://github.com/jthegedus/asdf-gcloud
 
+  # awscli
+  asdf plugin add awscli
+
   # k8s
   asdf plugin-add kubectl https://github.com/Banno/asdf-kubectl.git
   asdf plugin-add kubectx https://github.com/trnubo/asdf-kubectx.git
