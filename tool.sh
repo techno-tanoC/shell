@@ -11,7 +11,7 @@ setup_ruby() {
     sudo pacman -S --noconfirm --needed base-devel libffi libyaml openssl zlib
     sudo pacman -S --noconfirm --needed sqlite
   elif [ `lsb_release -is` = "Ubuntu" ] ; then
-    sudo apt-get install -y autoconf bison build-essential libssl-dev libyaml-dev libreadline6-dev zlib1g-dev libncurses5-dev libffi-dev libgdbm6 libgdbm-dev
+    sudo apt-get install -y autoconf bison build-essential libssl-dev libyaml-dev libreadline6-dev zlib1g-dev libncurses5-dev libffi-dev libgdbm6 libgdbm-dev libdb-dev
     sudo apt install -y libsqlite3-dev
   else
     echo "unsupported OS"
