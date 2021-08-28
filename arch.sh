@@ -14,7 +14,10 @@ setup_base() {
   sudo pacman -S --noconfirm fd
   sudo pacman -S --noconfirm ripgrep
   sudo pacman -S --noconfirm dnsutils
+
   yay -S --noconfirm peco
+  yay -S --noconfirm ngrok-bin
+  yay -S --noconfirm direnv-bin
 }
 
 setup_app() {
@@ -33,7 +36,6 @@ setup_app() {
   yay -S --noconfirm bitwarden-bin
   yay -S --noconfirm xsel
   yay -S --noconfirm insomnia-bin
-  yay -S --noconfirm ngrok-bin
 
   # install font
   sudo pacman -S --noconfirm otf-ipaexfont
@@ -68,34 +70,9 @@ setup_docker() {
   sudo systemctl start docker.service
 }
 
-setup_gcloud() {
-  yay -S --noconfirm google-cloud-sdk
-}
-
-setup_aws() {
-  # https://docs.aws.amazon.com/ja_jp/cli/latest/userguide/install-cliv2-linux.html
-  mkdir -p ~/bin
-  mkdir temp
-  cd temp
-  curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
-  unzip awscliv2.zip
-  ./aws/install --install-dir ~/bin/awscli --bin-dir ~/bin
-  cd -
-  rm -rf temp
-
-  # https://docs.aws.amazon.com/ja_jp/eks/latest/userguide/install-aws-iam-authenticator.html
-  mkdir -p ~/bin
-  cd ~/bin
-  curl -o aws-iam-authenticator https://amazon-eks.s3.us-west-2.amazonaws.com/1.19.6/2021-01-05/bin/linux/amd64/aws-iam-authenticator
-  chmod +x ./aws-iam-authenticator
-  cd -
-}
-
 setup_base
 setup_app
 setup_fcitx
 setup_docker
-setup_gcloud
-setup_aws
 
 LANG=C xdg-user-dirs-gtk-update
