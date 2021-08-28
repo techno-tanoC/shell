@@ -28,6 +28,9 @@ cdrdao read-cd --read-raw --datafile 'TITLE'.{bin,toc}
 
 - "設定"がない時は`pacman -S gnome-control-center`
 
+## 問題報告
+設定->プライバシー->診断で変更できる
+
 ## mozcの辞書ツール
 `/usr/lib/mozc/mozc_tool --mode=dictionary_tool`
 
