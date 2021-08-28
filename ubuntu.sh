@@ -5,35 +5,31 @@ setup_base() {
   sudo apt update
   sudo apt upgrade -y
 
-  sudo apt install -y tree
   sudo apt install -y vim
   sudo apt install -y zsh
-  sudo apt install -y curl
-  sudo apt install -y peco
+
+  sudo snap install curl
+  sudo snap install tree
+  sudo snap install peco
+  sudo snap install ngrok
+  sudo snap install direnv
+
   # chsh -s $(which zsh)
 }
 
 setup_app() {
   sudo apt install -y transmission
   sudo apt install -y virtualbox
-  sudo apt install -y vlc
   sudo apt install -y spacefm
-  sudo apt install -y gnome-tweak-tool
-  sudo apt install -y snapd
+  sudo apt install -y gnome-tweaks
   sudo apt install -y xsel
 
-  snap install slack --classic
-  snap install code --classic
-  snap install bitwarden
-  snap install discord
-}
-
-setup_chrome() {
-  sudo apt install -y chrome-gnome-shell
-
-  wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-  sudo dpkg -i google-chrome-stable_current_amd64.deb
-  rm google-chrome-stable_current_amd64.deb
+  sudo snap install slack --classic
+  sudo snap install code --classic
+  sudo snap install vlc
+  sudo snap install insomnia
+  sudo snap install bitwarden
+  sudo snap install discord
 }
 
 setup_fcitx() {
@@ -44,19 +40,13 @@ setup_fcitx() {
 }
 
 setup_docker() {
-  sudo apt install -y docker docker-compose
+  sudo snap install docker
   sudo usermod -aG docker $USER
-}
-
-setup_gcloud() {
-  snap install google-cloud-sdk --classic
 }
 
 setup_base
 setup_app
-# setup_chrome
 setup_fcitx
 setup_docker
-setup_gcloud
 
 LANG=C xdg-user-dirs-gtk-update
