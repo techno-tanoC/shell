@@ -72,12 +72,13 @@ setup_elixir() {
   bash ~/.asdf/plugins/nodejs/bin/import-release-team-keyring
 }
 
-setup_elm() {
+setup_plugins() {
   # elm
   asdf plugin-add elm https://github.com/vic/asdf-elm.git
-}
 
-setup_infra() {
+  # docker-compose
+  asdf plugin-add docker-compose https://github.com/virtualstaticvoid/asdf-docker-compose.git
+
   # terraform
   asdf plugin-add terraform https://github.com/Banno/asdf-hashicorp.git
 
@@ -99,5 +100,4 @@ setup_ruby
 setup_rust
 setup_asdf
 setup_elixir
-setup_elm
-setup_infra
+setup_plugins
