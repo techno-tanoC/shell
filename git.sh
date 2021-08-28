@@ -1,7 +1,7 @@
 #!/bin/bash
 set -eu
 
-echo "Did you update your ssh key to github?"
+echo "Did you upload your ssh key to github?"
 read
 
 if [ `uname` = "Darwin" ] ; then
