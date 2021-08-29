@@ -23,6 +23,8 @@ setup_app() {
   sudo apt install -y spacefm
   sudo apt install -y gnome-tweaks
   sudo apt install -y xsel
+  sudo apt install -y dconf-editor
+  sudo apt install -y cifs-utils
 
   sudo snap install slack --classic
   sudo snap install code --classic
