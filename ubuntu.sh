@@ -42,9 +42,11 @@ setup_fcitx() {
 }
 
 setup_docker() {
-  sudo snap install docker
+  # https://okadahiroshi.hatenablog.com/entry/2018/10/20/141058
+  # https://github.com/docker-archive/docker-snap/issues/1
   sudo groupadd docker
   sudo usermod -aG docker $USER
+  sudo snap install docker
 }
 
 setup_base
