@@ -18,7 +18,7 @@ code --install-extension castwide.solargraph
 code --install-extension jakebecker.elixir-ls
 
 # rust
-code --install-extension rust-lang.rust
+code --install-extension matklad.rust-analyzer
 code --install-extension serayuzgur.crates
 code --install-extension bungcip.better-toml
 
