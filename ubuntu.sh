@@ -41,6 +41,7 @@ setup_fcitx() {
 
 setup_docker() {
   sudo snap install docker
+  sudo groupadd docker
   sudo usermod -aG docker $USER
 }
 
