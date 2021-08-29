@@ -74,7 +74,7 @@ setup_elixir() {
 
 setup_plugins() {
   # elm
-  asdf plugin-add elm https://github.com/vic/asdf-elm.git
+  asdf plugin-add elm https://github.com/asdf-community/asdf-elm.git
 
   # docker-compose
   asdf plugin-add docker-compose https://github.com/virtualstaticvoid/asdf-docker-compose.git
