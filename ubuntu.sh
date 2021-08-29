@@ -7,18 +7,19 @@ setup_base() {
 
   sudo apt install -y vim
   sudo apt install -y zsh
+  sudo apt install -y curl
+  sudo apt install -y tree
+  sudo apt install -y direnv
+  sudo apt install -y peco
 
-  sudo snap install curl
-  sudo snap install tree
-  sudo snap install peco
   sudo snap install ngrok
-  sudo snap install direnv
 
   # chsh -s $(which zsh)
 }
 
 setup_app() {
   sudo apt install -y transmission
+  sudo apt install -y vlc
   sudo apt install -y virtualbox
   sudo apt install -y spacefm
   sudo apt install -y gnome-tweaks
@@ -28,7 +29,6 @@ setup_app() {
 
   sudo snap install slack --classic
   sudo snap install code --classic
-  sudo snap install vlc
   sudo snap install insomnia
   sudo snap install bitwarden
   sudo snap install discord
