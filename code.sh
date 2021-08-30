@@ -23,7 +23,7 @@ code --install-extension serayuzgur.crates
 code --install-extension bungcip.better-toml
 
 # elm
-code --install-extension sbrink.elm
+code --install-extension elmtooling.elm-ls-vscode
 code --install-extension necinc.elmmet
 
 # haskell
