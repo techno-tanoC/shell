@@ -29,6 +29,9 @@ code --install-extension necinc.elmmet
 # haskell
 # code --install-extension justusadam.language-haskell
 
+# go
+code --install-extension golang.Go
+
 # devops
 code --install-extension ms-azuretools.vscode-docker
 code --install-extension mauve.terraform
