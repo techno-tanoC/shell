@@ -44,9 +44,23 @@ setup_fcitx() {
 setup_docker() {
   # https://okadahiroshi.hatenablog.com/entry/2018/10/20/141058
   # https://github.com/docker-archive/docker-snap/issues/1
-  sudo groupadd docker
+  # sudo groupadd docker
+  # sudo usermod -aG docker $USER
+  # sudo snap install docker
+  sudo apt-get install \
+    apt-transport-https \
+    ca-certificates \
+    curl \
+    gnupg \
+    lsb-release
+  curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
+  echo \
+  "deb [arch=amd64 signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu \
+  $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+  sudo apt-get update
+  sudo apt-get install -y docker-ce docker-ce-cli containerd.io
+
   sudo usermod -aG docker $USER
-  sudo snap install docker
 }
 
 setup_base
