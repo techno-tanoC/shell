@@ -27,7 +27,6 @@ setup_app() {
   sudo apt install -y dconf-editor
   sudo apt install -y cifs-utils
 
-  sudo snap install slack --classic
   sudo snap install code --classic
   sudo snap install insomnia
   sudo snap install bitwarden
@@ -39,6 +38,15 @@ setup_fcitx() {
 
   # Setting -> Language and Regionのmanage installed languagesからIM Systemをfcitxにしておく
   # https://kinakoankon.net/ubuntu-20-04-japanese-input-ibus-fcitx-mozc/
+}
+
+setup_slack() {
+  # Download AppImage
+  # https://www.appimagehub.com/p/1422594/
+
+  # or install with deb
+  # sudo apt update && sudo apt install -y gdebi
+  # gdebi [slack.deb]
 }
 
 setup_docker() {
