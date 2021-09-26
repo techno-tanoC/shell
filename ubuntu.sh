@@ -29,7 +29,7 @@ setup_app() {
 
   sudo snap install code --classic
   sudo snap install insomnia
-  sudo snap install bitwarden
+  # sudo snap install bitwarden
   sudo snap install discord
 }
 

@@ -2,13 +2,13 @@
 2. ダウンロードしたバイナリに実行権限を付ける
 3. desktop entryを作成
 
-```.local/share/applications/bitwarden.desktop
+```~/.local/share/applications/bitwarden.desktop
 [Desktop Entry]
 Name=Bitwarden
 Exec=bitwarden
 Terminal=false
 Type=Application
-Icon=bitwarden.png
+Icon=bitwarden.jpg
 ```
 
 パスの通ってない場所に置いた場合は絶対パスで指定する。
