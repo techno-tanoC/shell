@@ -25,7 +25,7 @@ cdrdao read-cd --read-raw --datafile 'TITLE'.{bin,toc}
 
 ## 設定周り
 ### アラート音( firefox含む )を消したい
-`dconf-editor` を入れて `org/gnome/desktop/sound` を `False` にする
+`dconf-editor` を入れて `org/gnome/desktop/sound/event-sounds` を `False` にする
 https://ubuntuhandbook.org/index.php/2019/03/disable-mute-alert-sound-ubuntu-19-04/
 
 ### キーボード周り
