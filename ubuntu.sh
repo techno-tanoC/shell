@@ -55,7 +55,7 @@ setup_docker() {
   # sudo groupadd docker
   # sudo usermod -aG docker $USER
   # sudo snap install docker
-  sudo apt-get install \
+  sudo apt-get install -y \
     apt-transport-https \
     ca-certificates \
     curl \
