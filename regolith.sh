@@ -11,6 +11,7 @@ setup_base() {
   sudo apt install -y tree
   sudo apt install -y direnv
   sudo apt install -y peco
+  sudo apt install -y ranger
 
   # chsh -s $(which zsh)
 }
