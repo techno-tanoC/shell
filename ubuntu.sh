@@ -13,8 +13,6 @@ setup_base() {
   sudo apt install -y peco
   sudo apt install -y ranger
 
-  sudo snap install ngrok
-
   # chsh -s $(which zsh)
 }
 
@@ -27,11 +25,6 @@ setup_app() {
   sudo apt install -y xsel
   sudo apt install -y dconf-editor
   sudo apt install -y cifs-utils
-
-  sudo snap install code --classic
-  sudo snap install insomnia
-  # sudo snap install bitwarden
-  sudo snap install discord
 }
 
 setup_fcitx() {
