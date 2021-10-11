@@ -51,22 +51,6 @@ setup_docker() {
   sudo usermod -aG docker $USER
 }
 
-# ngrok
-# https://ngrok.com/download
-
-# VSCode
-# https://code.visualstudio.com/download
-
-# Insomnia
-# https://insomnia.rest/download
-
-# Discord
-# https://discord.com/download
-
-# Bitwarden
-# https://bitwarden.com/download/
-
-
 setup_base
 setup_app
 setup_fcitx
