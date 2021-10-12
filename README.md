@@ -1,4 +1,28 @@
 ## Apps
+## Bitwarden
+https://bitwarden.com/download/
+
+- snapでインストールすると起動が遅い
+
+## Insomnia
+https://insomnia.rest/download
+
+- snapでインストールすると起動が遅い
+
+## Slack
+https://slack.com/intl/ja-jp/downloads/linux
+
+- snapでインストールすると日本語入力できない
+
+## Code
+https://code.visualstudio.com/download
+
+## Discord
+https://discord.com/download
+
+## ngrok
+https://ngrok.com/download
+
 ### Book viewer
 calibre
 
@@ -22,8 +46,7 @@ cdrdao read-cd --read-raw --datafile 'TITLE'.{bin,toc}
 ### ssh-copy-id
 `ssh-copy-id user@ip-address`
 
-
-## 設定周り
+## linux
 ### アラート音( firefox含む )を消したい
 `dconf-editor` を入れて `org/gnome/desktop/sound/event-sounds` を `False` にする
 https://ubuntuhandbook.org/index.php/2019/03/disable-mute-alert-sound-ubuntu-19-04/
