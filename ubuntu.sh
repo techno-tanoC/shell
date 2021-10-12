@@ -34,21 +34,7 @@ setup_fcitx() {
   # https://kinakoankon.net/ubuntu-20-04-japanese-input-ibus-fcitx-mozc/
 }
 
-# setup_slack() {
-#   Download AppImage
-#   https://www.appimagehub.com/p/1422594/
-#
-#   or install with deb
-#   sudo apt update && sudo apt install -y gdebi
-#   gdebi [slack.deb]
-# }
-
 setup_docker() {
-  # https://okadahiroshi.hatenablog.com/entry/2018/10/20/141058
-  # https://github.com/docker-archive/docker-snap/issues/1
-  # sudo groupadd docker
-  # sudo usermod -aG docker $USER
-  # sudo snap install docker
   sudo apt-get install -y \
     apt-transport-https \
     ca-certificates \
