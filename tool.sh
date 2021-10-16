@@ -35,7 +35,9 @@ setup_rust() {
   # cargo
   # cargo-update requires cmake
   # cargo-web requires pkg-config
+
   # cargo install cargo-watch cargo-edit just cargo-update cargo-outdated cargo-tree watchexec-cli
+  # cargo install ripgrep fd-find
 }
 
 setup_asdf() {
