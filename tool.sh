@@ -36,7 +36,7 @@ setup_rust() {
   # cargo-update requires cmake
   # cargo-web requires pkg-config
 
-  # cargo install cargo-watch cargo-edit just cargo-update cargo-outdated cargo-tree watchexec-cli
+  # cargo install cargo-update cargo-watch cargo-edit just cargo-update cargo-outdated cargo-tree watchexec-cli
   # cargo install ripgrep fd-find
 }
 
