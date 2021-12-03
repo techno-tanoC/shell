@@ -12,6 +12,7 @@ elif [ `lsb_release -is` = "ManjaroLinux" ] ; then
   sudo pacman -Syyu
   sudo pacman -S --noconfirm git tig
 elif [ `lsb_release -is` = "Ubuntu" ] ; then
+  sudo add-apt-repository ppa:git-core/ppa
   sudo apt update
   sudo apt upgrade -y
   sudo apt install -y git tig curl
