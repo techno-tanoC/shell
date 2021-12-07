@@ -1,27 +1,37 @@
 #!/bin/sh
 set -eu
 
-# /usr/bin/ruby -e "`curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install`"
+# /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 setup_base() {
+  brew install wget
   brew install tree
   brew install zsh
-  brew install fd
+  brew install tig
   brew install peco
-  brew install ripgrep
+  brew install direnv
 }
 
 setup_app() {
-  brew cask install google-chrome
-  brew cask install visual-studio-code
-  brew cask install virtualbox
-  brew cask install bitwarden
-  brew cask install slack
-  brew cask install boostnote
+  brew install hyper
+  brew install firefox
+  brew install google-chrome
+  brew install visual-studio-code
+  brew install bitwarden
+  brew install slack
+  brew install insomnia
+  brew install boostnote
 }
 
-setup_gcloud() {
-  # todo: completion
-  brew cask install google-cloud-sdk
-  # gcloud init
-  # gcloud auth login
+setup_option() {
+  brew install fzf
+  brew install kube-ps1
+  brew install kubectx
+  brew install aws-iam-authenticator
+
+  brew install --cask docker
+  brew install --cask 1password
 }
+
+setup_base
+setup_app
+setup_option
