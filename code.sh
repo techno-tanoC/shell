@@ -28,7 +28,7 @@ code --install-extension elmtooling.elm-ls-vscode
 code --install-extension necinc.elmmet
 
 # haskell
-# code --install-extension justusadam.language-haskell
+code --install-extension haskell.haskell
 
 # go
 code --install-extension golang.Go
