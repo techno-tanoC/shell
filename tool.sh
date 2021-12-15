@@ -92,10 +92,13 @@ setup_plugins() {
 
   # k8s
   asdf plugin-add kubectl https://github.com/Banno/asdf-kubectl.git
-  asdf plugin-add kubectx https://github.com/trnubo/asdf-kubectx.git
   asdf plugin-add helm https://github.com/Antiarchitect/asdf-helm.git
   asdf plugin-add istioctl https://github.com/rafik8/asdf-istioctl.git
   asdf plugin-add kind https://github.com/reegnz/asdf-kind.git
+
+  # ln -s ~/.asdf/installs/kubectx/$(asdf current kubectx | awk '{print $2}')/completion/_kubectx.zsh ${ASDF_DIR}/completions
+  # ln -s ~/.asdf/installs/kubectx/$(asdf current kubectx | awk '{print $2}')/completion/_kubens.zsh ${ASDF_DIR}/completions
+  asdf plugin-add kubectx https://github.com/virtualstaticvoid/asdf-kubectx.git
 }
 
 setup_ruby
