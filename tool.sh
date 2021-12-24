@@ -78,9 +78,6 @@ setup_plugins() {
   # elm
   asdf plugin-add elm https://github.com/asdf-community/asdf-elm.git
 
-  # docker-compose
-  asdf plugin-add docker-compose https://github.com/virtualstaticvoid/asdf-docker-compose.git
-
   # terraform
   asdf plugin-add terraform https://github.com/Banno/asdf-hashicorp.git
 
