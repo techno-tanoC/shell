@@ -86,3 +86,10 @@ about:config -> mousewheel.default.delta_multiplier_x
 
 ### URLバーをクリックした時に全て選択する
 browser.urlbar.clickSelectsAll
+
+### Windowsのインストールメディアを焼く
+```
+sudo add-apt-repository ppa:nilarimogard/webupd8
+sudo apt-get update
+sudo apt install woeusb
+```
