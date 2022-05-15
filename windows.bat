@@ -1,4 +1,4 @@
-wsl --set-default-version 2
+rem https://docs.microsoft.com/ja-jp/windows/wsl/install-manual
 
 winget install -e --id Bitwarden.Bitwarden
 winget install -e --id Discord.Discord
