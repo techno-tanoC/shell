@@ -96,6 +96,9 @@ setup_plugins() {
   # ln -s ~/.asdf/installs/kubectx/$(asdf current kubectx | awk '{print $2}')/completion/_kubectx.zsh ${ASDF_DIR}/completions
   # ln -s ~/.asdf/installs/kubectx/$(asdf current kubectx | awk '{print $2}')/completion/_kubens.zsh ${ASDF_DIR}/completions
   asdf plugin-add kubectx https://github.com/virtualstaticvoid/asdf-kubectx.git
+
+  # golang
+  asdf plugin-add golang https://github.com/kennyp/asdf-golang.git
 }
 
 setup_ruby
