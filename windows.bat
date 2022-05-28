@@ -12,6 +12,7 @@ winget install -e --id Amazon.Kindle
 winget install -e --id VideoLAN.VLC
 winget install -e --id Google.AndroidStudio
 winget install -e --id Valve.Steam
+winget install -e --id Microsoft.PowerToys
 
 rem winget install -e --id Google.Chrome
 rem winget install -e --id Docker.DockerDesktop
