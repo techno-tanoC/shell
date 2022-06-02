@@ -33,10 +33,9 @@ setup_rust() {
   # rustup target add x86_64-unknown-linux-musl
 
   # cargo
-  # cargo-update requires cmake
   # cargo-web requires pkg-config
 
-  # cargo install cargo-update cargo-watch cargo-edit just cargo-update cargo-outdated cargo-tree cargo-clean-recursive watchexec-cli
+  # cargo install cargo-watch cargo-edit just cargo-outdated cargo-tree cargo-clean-recursive watchexec-cli
   # cargo install ripgrep fd-find
 }
 
