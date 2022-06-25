@@ -75,7 +75,7 @@ setup_elixir() {
 
 setup_plugins() {
   # elm
-  asdf plugin-add elm https://github.com/asdf-community/asdf-elm.git
+  # asdf plugin-add elm https://github.com/asdf-community/asdf-elm.git
 
   # terraform
   asdf plugin-add terraform https://github.com/Banno/asdf-hashicorp.git
@@ -85,23 +85,24 @@ setup_plugins() {
 
   # awscli
   asdf plugin add awscli
+  asdf plugin-add aws-vault https://github.com/karancode/asdf-aws-vault.git
 
   # k8s
-  asdf plugin-add kubectl https://github.com/Banno/asdf-kubectl.git
-  asdf plugin-add helm https://github.com/Antiarchitect/asdf-helm.git
-  asdf plugin-add istioctl https://github.com/rafik8/asdf-istioctl.git
-  asdf plugin-add kind https://github.com/reegnz/asdf-kind.git
+  # asdf plugin-add kubectl https://github.com/Banno/asdf-kubectl.git
+  # asdf plugin-add helm https://github.com/Antiarchitect/asdf-helm.git
+  # asdf plugin-add istioctl https://github.com/rafik8/asdf-istioctl.git
+  # asdf plugin-add kind https://github.com/reegnz/asdf-kind.git
 
   # ln -s ~/.asdf/installs/kubectx/$(asdf current kubectx | awk '{print $2}')/completion/_kubectx.zsh ${ASDF_DIR}/completions
   # ln -s ~/.asdf/installs/kubectx/$(asdf current kubectx | awk '{print $2}')/completion/_kubens.zsh ${ASDF_DIR}/completions
-  asdf plugin-add kubectx https://github.com/virtualstaticvoid/asdf-kubectx.git
+  # asdf plugin-add kubectx https://github.com/virtualstaticvoid/asdf-kubectx.git
 
   # golang
-  asdf plugin-add golang https://github.com/kennyp/asdf-golang.git
+  # asdf plugin-add golang https://github.com/kennyp/asdf-golang.git
 }
 
 setup_ruby
-setup_rust
+# setup_rust
 setup_asdf
-setup_elixir
+# setup_elixir
 setup_plugins

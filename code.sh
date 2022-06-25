@@ -13,27 +13,27 @@ code --install-extension ms-vscode-remote.vscode-remote-extensionpack
 # code --install-extension atishay-jain.all-autocomplete
 
 # ruby
-code --install-extension rebornix.ruby
-code --install-extension castwide.solargraph
+# code --install-extension rebornix.ruby
+# code --install-extension castwide.solargraph
 
 # elixir
-code --install-extension jakebecker.elixir-ls
+# code --install-extension jakebecker.elixir-ls
 
 # rust
-code --install-extension matklad.rust-analyzer
-code --install-extension serayuzgur.crates
-code --install-extension bungcip.better-toml
+# code --install-extension matklad.rust-analyzer
+# code --install-extension serayuzgur.crates
+# code --install-extension bungcip.better-toml
 
 # elm
-code --install-extension elmtooling.elm-ls-vscode
-code --install-extension necinc.elmmet
+# code --install-extension elmtooling.elm-ls-vscode
+# code --install-extension necinc.elmmet
 
 # haskell
-code --install-extension haskell.haskell
+# code --install-extension haskell.haskell
 
 # go
-code --install-extension golang.Go
+# code --install-extension golang.Go
 
 # devops
-code --install-extension ms-azuretools.vscode-docker
-code --install-extension mauve.terraform
+# code --install-extension ms-azuretools.vscode-docker
+# code --install-extension mauve.terraform
