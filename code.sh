@@ -12,6 +12,10 @@ code --install-extension ms-vscode-remote.vscode-remote-extensionpack
 # code --install-extension TabNine.tabnine-vscode
 # code --install-extension atishay-jain.all-autocomplete
 
+# emoji
+code --install-extension bierner.emojisense
+code --install-extension bierner.markdown-emoji
+
 # ruby
 # code --install-extension rebornix.ruby
 # code --install-extension castwide.solargraph
