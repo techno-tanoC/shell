@@ -78,7 +78,7 @@ setup_plugins() {
   # asdf plugin-add elm https://github.com/asdf-community/asdf-elm.git
 
   # terraform
-  asdf plugin-add terraform https://github.com/Banno/asdf-hashicorp.git
+  # asdf plugin-add terraform https://github.com/Banno/asdf-hashicorp.git
 
   # gcloud
   asdf plugin add gcloud https://github.com/jthegedus/asdf-gcloud
