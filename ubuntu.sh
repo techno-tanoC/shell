@@ -17,6 +17,7 @@ setup_base() {
 }
 
 setup_app() {
+  sudo apt install -y gnome-shell-extension-manager
   sudo apt install -y transmission
   sudo apt install -y vlc
   sudo apt install -y virtualbox
@@ -28,10 +29,12 @@ setup_app() {
 }
 
 setup_fcitx() {
-  sudo apt install -y fcitx-mozc
+  sudo apt install -y fcitx5-mozc
 
   # Setting -> Language and Regionのmanage installed languagesからIM Systemをfcitxにしておく
   # https://kinakoankon.net/ubuntu-20-04-japanese-input-ibus-fcitx-mozc/
+
+  # fcitx5をgnome-tweaksからautostartに追加する
 }
 
 setup_base
