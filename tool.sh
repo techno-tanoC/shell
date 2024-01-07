@@ -6,7 +6,7 @@ setup_ruby() {
   # refer below:
   # https://github.com/rbenv/ruby-build/wiki#suggested-build-environment
   if [ `uname` = "Darwin" ] ; then
-    brew install openssl readline
+    brew install openssl@3 readline libyaml gmp
   elif [ `lsb_release -is` = "ManjaroLinux" ] ; then
     sudo pacman -S --noconfirm --needed base-devel libffi libyaml openssl zlib
     sudo pacman -S --noconfirm --needed sqlite
