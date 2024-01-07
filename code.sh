@@ -39,5 +39,5 @@ code --install-extension bierner.markdown-emoji
 # code --install-extension golang.Go
 
 # devops
-# code --install-extension ms-azuretools.vscode-docker
+code --install-extension ms-azuretools.vscode-docker
 # code --install-extension mauve.terraform
