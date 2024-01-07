@@ -2,7 +2,7 @@
 set -eu
 
 # /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-setup_base() {
+setup_cui() {
   brew install wget
   brew install tree
   brew install zsh
@@ -11,27 +11,25 @@ setup_base() {
   brew install direnv
 }
 
-setup_app() {
-  brew install hyper
-  brew install firefox
-  brew install google-chrome
-  brew install visual-studio-code
-  brew install bitwarden
-  brew install slack
-  brew install insomnia
-  brew install boostnote
+setup_gui() {
+  brew install --cask firefox
+  brew install --cask google-chrome
+  brew install --cask visual-studio-code
+  brew install --cask bitwarden
+  brew install --cask slack
+  brew install --cask insomnia
+  brew install --cask iterm2
+  brew install --cask docker
 }
 
 setup_option() {
   brew install fzf
   brew install kube-ps1
   brew install kubectx
-  brew install aws-iam-authenticator
 
-  brew install --cask docker
   brew install --cask 1password
 }
 
-setup_base
-setup_app
-setup_option
+setup_cui
+setup_gui
+# setup_option
