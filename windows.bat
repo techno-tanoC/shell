@@ -1,6 +1,7 @@
 rem https://docs.microsoft.com/ja-jp/windows/wsl/install-manual
 
-winget install -e --id Bitwarden.Bitwarden
+rem winget install -e --id Bitwarden.Bitwarden
+winget install -e --id AgileBits.1Password
 winget install -e --id Discord.Discord
 winget install -e --id Mozilla.Firefox
 winget install -e --id Microsoft.VisualStudioCode
