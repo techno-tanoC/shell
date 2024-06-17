@@ -9,6 +9,7 @@ code --install-extension nonylene.dark-molokai-theme
 code --install-extension vscodevim.vim
 code --install-extension oderwat.indent-rainbow
 code --install-extension ms-vscode-remote.vscode-remote-extensionpack
+# code --install-extension humao.rest-client
 # code --install-extension TabNine.tabnine-vscode
 # code --install-extension atishay-jain.all-autocomplete
 
