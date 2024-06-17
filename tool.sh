@@ -46,6 +46,13 @@ setup_asdf() {
   set -e
 }
 
+setup_mise() {
+  curl https://mise.run | sh
+
+  # https://usage.jdx.dev/cli/
+  mise use -g usage
+}
+
 setup_elixir() {
   # erlang and elixir
   # refer below:
