@@ -99,6 +99,7 @@ setup_plugins() {
   # asdf plugin-add helm https://github.com/Antiarchitect/asdf-helm.git
   # asdf plugin-add istioctl https://github.com/rafik8/asdf-istioctl.git
   # asdf plugin-add kind https://github.com/reegnz/asdf-kind.git
+  # asdf plugin-add kustomize https://github.com/Banno/asdf-kustomize.git
 
   # ln -s ~/.asdf/installs/kubectx/$(asdf current kubectx | awk '{print $2}')/completion/_kubectx.zsh ${ASDF_DIR}/completions
   # ln -s ~/.asdf/installs/kubectx/$(asdf current kubectx | awk '{print $2}')/completion/_kubens.zsh ${ASDF_DIR}/completions
