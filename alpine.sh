@@ -13,6 +13,7 @@ setup_base() {
   sudo apk add --no-cache tree
   sudo apk add --no-cache wget
   sudo apk add --no-cache curl
+  sudo apk add --no-cache cifs-utils
 }
 
 setup_ssh() {
