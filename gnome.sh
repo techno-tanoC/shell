@@ -12,14 +12,8 @@ install_add_on() {
   rm $FILE
 }
 
-# dash_to_dock
-# https://extensions.gnome.org/extension/307/dash-to-dock/
-
-# multi monitors add on
-# https://extensions.gnome.org/extension/921/multi-monitors-add-on/
-
 # clipboard indiccator
 # https://extensions.gnome.org/extension/779/clipboard-indicator/
 
-# shelltile
-# https://extensions.gnome.org/extension/657/shelltile/
+# Dash to Panel
+# https://extensions.gnome.org/extension/1160/dash-to-panel/
