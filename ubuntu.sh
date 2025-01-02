@@ -28,17 +28,24 @@ setup_app() {
   sudo apt install -y cifs-utils
 }
 
-setup_fcitx() {
-  sudo apt install -y fcitx5-mozc
+setup_docker() {
+  sudo apt install -y ca-certificates curl
+  sudo install -m 0755 -d /etc/apt/keyrings
+  sudo curl -fsSL https://download.docker.com/linux/ubuntu/gpg -o /etc/apt/keyrings/docker.asc
+  sudo chmod a+r /etc/apt/keyrings/docker.asc
 
-  # Setting -> Language and Regionのmanage installed languagesからIM Systemをfcitxにしておく
-  # https://kinakoankon.net/ubuntu-20-04-japanese-input-ibus-fcitx-mozc/
+  echo \
+    "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.asc] https://download.docker.com/linux/ubuntu \
+    $(. /etc/os-release && echo "$VERSION_CODENAME") stable" | \
+    sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+  sudo apt update
+  sudo apt install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 
-  # fcitx5をgnome-tweaksからautostartに追加する
+  sudo adduser $USER docker
 }
 
 setup_base
 setup_app
-setup_fcitx
+setup_docker
 
 LANG=C xdg-user-dirs-gtk-update
