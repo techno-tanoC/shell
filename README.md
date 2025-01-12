@@ -1,14 +1,4 @@
 ## Apps
-## Bitwarden
-https://bitwarden.com/download/
-
-- snapでインストールすると起動が遅い
-
-## Insomnia
-https://insomnia.rest/download
-
-- snapでインストールすると起動が遅い
-
 ## Slack
 https://slack.com/intl/ja-jp/downloads/linux
 
@@ -68,9 +58,9 @@ https://ubuntuhandbook.org/index.php/2019/03/disable-mute-alert-sound-ubuntu-19-
 https://wiki.manjaro.org/index.php?title=Configure_NVIDIA_(non-free)_settings_and_load_them_on_Startup
 sudo mhwd -a pci nonfree 0300
 
-### ubuntu 20.04 に nvidia のドライバを入れる
+### ubuntu に nvidia のドライバを入れる
 - `ubuntu-drivers devices` で推奨ドライバを確認
-- `sudo apt install nvidia-driver-450` でドライバをインストール
+- `sudo apt install nvidia-driver-xxx` でドライバをインストール
 - 再起動する
 - `nvidia-smi` で動作確認
 
