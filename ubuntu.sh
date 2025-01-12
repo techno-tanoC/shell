@@ -28,6 +28,21 @@ setup_app() {
   sudo apt install -y cifs-utils
 }
 
+setup_firefox() {
+  sudo install -d -m 0755 /etc/apt/keyrings
+  wget -q https://packages.mozilla.org/apt/repo-signing-key.gpg -O- | sudo tee /etc/apt/keyrings/packages.mozilla.org.asc > /dev/null
+  echo "deb [signed-by=/etc/apt/keyrings/packages.mozilla.org.asc] https://packages.mozilla.org/apt mozilla main" | sudo tee -a /etc/apt/sources.list.d/mozilla.list > /dev/null
+  echo '
+Package: *
+Pin: origin packages.mozilla.org
+Pin-Priority: 1000
+' | sudo tee /etc/apt/preferences.d/mozilla
+
+  snap remove firefox
+  sudo apt update
+  sudo apt install -y firefox
+}
+
 setup_docker() {
   sudo apt install -y ca-certificates curl
   sudo install -m 0755 -d /etc/apt/keyrings
@@ -46,6 +61,7 @@ setup_docker() {
 
 setup_base
 setup_app
+setup_firefox
 setup_docker
 
 LANG=C xdg-user-dirs-gtk-update
